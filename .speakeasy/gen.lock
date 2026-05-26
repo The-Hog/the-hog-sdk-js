@@ -1,0 +1,1206 @@
+lockVersion: 2.0.0
+id: 515ef14a-1490-4b15-a72d-afeaf331237a
+management:
+  docChecksum: 25c047325491ce079183f374d5c60568
+  docVersion: "1.0"
+  speakeasyVersion: 1.766.0
+  generationVersion: 2.887.0
+  releaseVersion: 0.1.0
+  configChecksum: 6e0dc2b9db282940fa03525b46283a8b
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.14
+    core: 3.26.52
+    defaultEnabledRetries: 0.1.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    flattening: 2.82.1
+    globalSecurity: 2.82.16
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.83.1
+    groups: 2.81.3
+    methodArguments: 0.1.2
+    nameOverrides: 2.81.4
+    nullables: 0.1.1
+    responseFormat: 0.3.0
+    retries: 2.83.0
+    sdkHooks: 0.4.0
+    unions: 2.86.4
+trackedFiles:
+  .gitattributes:
+    last_write_checksum: sha1:26d16d8297b104945139da8c25bd38feeaad3e25
+  .npmignore:
+    last_write_checksum: sha1:6572da81f2e7a978ec29c22c2210bf461c5897b2
+  .oxlintrc.json:
+    last_write_checksum: sha1:f14bd09c455fa2de0d94641369b7888d23ee62f2
+  FUNCTIONS.md:
+    last_write_checksum: sha1:33227d02bddb5ce356d92134e2f21d45ddc71970
+  RUNTIMES.md:
+    last_write_checksum: sha1:e45b854f02c357cbcfdb8c3663000e8339e16505
+  USAGE.md:
+    last_write_checksum: sha1:9843468668725ea7087f55a44ec8d6cbe717bc33
+  docs/lib/utils/retryconfig.md:
+    last_write_checksum: sha1:bc4454e196fcd219f5a78da690375a884f5ed07b
+  docs/models/actor.md:
+    last_write_checksum: sha1:5a6227ad18c8701910c3a59144b432dde88748a1
+  docs/models/author.md:
+    last_write_checksum: sha1:3f0d3b1a1229f8c47c21c4c6474718546853ea1c
+  docs/models/config.md:
+    last_write_checksum: sha1:7fdad6b6586852a21a907d487480feae7b9a4c3f
+  docs/models/create-monitor-dto.md:
+    last_write_checksum: sha1:cdf6405ed2ea67ffeca5b288840a0299948d79ec
+  docs/models/date-filter.md:
+    last_write_checksum: sha1:dbe853b48ad8fdb0252bfb3f97efdcef00eda13c
+  docs/models/deep-research-accepted-meta-dto.md:
+    last_write_checksum: sha1:9bbe8eecfa4442d1b097016bca21270cbc891fc1
+  docs/models/deep-research-budget-request-dto.md:
+    last_write_checksum: sha1:a5f7ea5440afe30c0a1f4c6d748538ec3f64987e
+  docs/models/deep-research-queued-response-dto-status.md:
+    last_write_checksum: sha1:c5fabd29531f438130c20b56a0a4f7c6e3d7c55e
+  docs/models/deep-research-queued-response-dto.md:
+    last_write_checksum: sha1:76a13371021c6b8df66b972d3b9a23de9ea6d5f4
+  docs/models/deep-research-request-dto.md:
+    last_write_checksum: sha1:20c47648975253953aefa96ac1f4513a70a09349
+  docs/models/enrichment-queued-response-dto-status.md:
+    last_write_checksum: sha1:57de8eb2b4eb6f739eb69a68f12bab672da30541
+  docs/models/enrichment-queued-response-dto.md:
+    last_write_checksum: sha1:b1651763530efe25f530f3213af944bd402c209e
+  docs/models/enrichment-sync-response-dto.md:
+    last_write_checksum: sha1:4dfcc49460e9950bd8cea85605dd95e8e5b70b27
+  docs/models/entity-company-nested-filter-dto.md:
+    last_write_checksum: sha1:4257bd85f20b5f7299f86ad963a86ac487e08eb0
+  docs/models/entity-employee-count-filter-dto.md:
+    last_write_checksum: sha1:529e5c2d5b99549962a307e5eb0c21cd4ecca01d
+  docs/models/entity-search-accepted-dto-status.md:
+    last_write_checksum: sha1:337d34e645bb3b06e8f8da386fa41ceaceb34f01
+  docs/models/entity-search-accepted-dto.md:
+    last_write_checksum: sha1:27f43d0efa1e5f06c528513bdb0c59cc7f0dff69
+  docs/models/entity-search-accepted-public-dto.md:
+    last_write_checksum: sha1:94feeae6ec2295c4fa8b963a3a2da5685d5a1117
+  docs/models/entity-search-filters-dto.md:
+    last_write_checksum: sha1:49c1292d30f5d3aee06af99f7cdd469f40ca607b
+  docs/models/error-t.md:
+    last_write_checksum: sha1:a9035f283c45b0dc919f7e52755349a10e6bdfdf
+  docs/models/errors/public-error-response-dto.md:
+    last_write_checksum: sha1:836010f785a385bcd9098b79235f639f2c9f7c9e
+  docs/models/handles.md:
+    last_write_checksum: sha1:01a4b7e433641fc6dfe8ce5c9d372640157fb115
+  docs/models/input-anchors.md:
+    last_write_checksum: sha1:51ada7e716d1d08ee44ff39b641397cd7672ad25
+  docs/models/instagram-comment-response-dto.md:
+    last_write_checksum: sha1:5f37d357d87ff4a8370636a60fbfb7d71f44444c
+  docs/models/instagram-follow-edge-response-dto-relation-type.md:
+    last_write_checksum: sha1:fd15fd6c0344ca7292de15352bdd926e6af05a07
+  docs/models/instagram-follow-edge-response-dto.md:
+    last_write_checksum: sha1:b50520106667246d1027274ec49ec35571cecc12
+  docs/models/instagram-follow-profile-response-dto.md:
+    last_write_checksum: sha1:69f21b29f834880296c32fa9f66dc6fe044b6b60
+  docs/models/instagram-follow-scrape-response-dto.md:
+    last_write_checksum: sha1:6fc12e9bc4ef2b932ce15dfaf2becdaee462119c
+  docs/models/instagram-post-response-dto.md:
+    last_write_checksum: sha1:8b5f974d5981bb8bd45dc8f9cb451aa27305916a
+  docs/models/linked-in-comment-actor-response-dto-type.md:
+    last_write_checksum: sha1:6438f0016de2f07a3b50b8d2516bf6b4919e6fbe
+  docs/models/linked-in-comment-actor-response-dto.md:
+    last_write_checksum: sha1:b7c3b6e4248a8e6fdd30793e52af43768fe117a5
+  docs/models/linked-in-comment-engagement-response-dto.md:
+    last_write_checksum: sha1:5b4ad449157c5250db49303bc0f8763e1b860e87
+  docs/models/linked-in-company-posts-response-dto.md:
+    last_write_checksum: sha1:afbfad715117bc4b6b903ad4b75b9c39449122d7
+  docs/models/linked-in-finder-response-dto.md:
+    last_write_checksum: sha1:a1047337c5e07ba862354ce7108ccc4de709b2a2
+  docs/models/linked-in-keyword-posts-config-body-dto-match-mode.md:
+    last_write_checksum: sha1:89c96a1c234f8f6d92563fdceb53cc0da30971dd
+  docs/models/linked-in-keyword-posts-config-body-dto-sort-by.md:
+    last_write_checksum: sha1:d97a5cd8559ef8b89b2db698cf1b04e4dd79b5a2
+  docs/models/linked-in-keyword-posts-config-body-dto.md:
+    last_write_checksum: sha1:383b341711108781e82844ba5df140b3de43a949
+  docs/models/linked-in-post-comment-response-dto.md:
+    last_write_checksum: sha1:e291b21c5f623d583df5d835b869d290cfc940d1
+  docs/models/linked-in-post-reaction-response-dto.md:
+    last_write_checksum: sha1:fd80f52439ace35a7d12a7a8492b2455bfdd0b99
+  docs/models/linked-in-post-response-dto.md:
+    last_write_checksum: sha1:610a833bd9cc2dc74db974a1e169a5dcec9738dc
+  docs/models/linked-in-profile-activity-post-response-dto.md:
+    last_write_checksum: sha1:947c0822a88856da66eb7adf5e36a98453fb351b
+  docs/models/linked-in-profile-comment-response-dto-actor.md:
+    last_write_checksum: sha1:cb51ae3736c69acadf38007d90a9a797dcece5af
+  docs/models/linked-in-profile-comment-response-dto-type.md:
+    last_write_checksum: sha1:1cdf6ce468f066bc78902a86f0ccb2c0619b1d19
+  docs/models/linked-in-profile-comment-response-dto.md:
+    last_write_checksum: sha1:af6fa0466828918da50606711a06f659037004f0
+  docs/models/linked-in-profile-posts-response-dto.md:
+    last_write_checksum: sha1:01d11c8ee28480ddb9f7bd4ffdb071b5ba08b6d4
+  docs/models/linked-in-profile-reaction-response-dto-type.md:
+    last_write_checksum: sha1:171f8b2debc63c712f2e42199f41bfe506ea5578
+  docs/models/linked-in-profile-reaction-response-dto.md:
+    last_write_checksum: sha1:b117e825906be1e43c8ee01e56bd6626a1cfc69e
+  docs/models/linked-in-reaction-actor-response-dto.md:
+    last_write_checksum: sha1:f50d96683137323d169de8d79a5896397c1b9a22
+  docs/models/match-mode.md:
+    last_write_checksum: sha1:e50e4f2d2c22a1419ba34994c6a79d1f40138cfc
+  docs/models/max-posts.md:
+    last_write_checksum: sha1:68c3e9f0a5df10650d3d4615ffd30defe4fe7ffa
+  docs/models/meta.md:
+    last_write_checksum: sha1:5720143a1acd66cb06114a8db7c545b616711041
+  docs/models/monitor-event-dto.md:
+    last_write_checksum: sha1:7f6979513ce72359e0e910116e9938a0dc6043db
+  docs/models/monitor-event-list-response-dto.md:
+    last_write_checksum: sha1:7cc52560f18958a05b605e25cf0d26863fe28184
+  docs/models/monitor-list-response-dto.md:
+    last_write_checksum: sha1:7128f0d0578f27010dd841d5d64eef157b1e80d4
+  docs/models/monitor-response-dto-status.md:
+    last_write_checksum: sha1:73825db2340e51d788877879deb9f438e016230f
+  docs/models/monitor-response-dto-type.md:
+    last_write_checksum: sha1:6c21f79acfe8579aad2d020e7349c34fd19ba7f5
+  docs/models/monitor-response-dto.md:
+    last_write_checksum: sha1:d8d2bac54fe141b7fbb42ed67f1b6271060a2269
+  docs/models/operation-response-dto-status.md:
+    last_write_checksum: sha1:09a92164a60ee40a4826222135b136a2f6881d15
+  docs/models/operation-response-dto.md:
+    last_write_checksum: sha1:14ff04545916e35b68d2ca57d2ace051e50d56e5
+  docs/models/operations/crawl-web-site-response-body.md:
+    last_write_checksum: sha1:225463925ee094249cc002868f6a1922c1de3cd5
+  docs/models/operations/data.md:
+    last_write_checksum: sha1:d68219164a852a95c95eb9346bc935c6c4715498
+  docs/models/operations/delete-monitor-request.md:
+    last_write_checksum: sha1:6f788a5c46811fb4e29da0e2f9db91434ef4e01f
+  docs/models/operations/find-linked-in-companies-response-body.md:
+    last_write_checksum: sha1:0262926bd6a6bd362d60ec56b564bf33366f4003
+  docs/models/operations/get-enrichment-request.md:
+    last_write_checksum: sha1:f94aa324e1dd90bc05814ec20a54e2be6f990872
+  docs/models/operations/get-instagram-post-data.md:
+    last_write_checksum: sha1:b8d8c78aafa3528d51474d544dc914d5c7ae2441
+  docs/models/operations/get-instagram-post-response-body.md:
+    last_write_checksum: sha1:1cd606277706d46140b8498d6fbb7b0625a586fe
+  docs/models/operations/get-instagram-profile-data.md:
+    last_write_checksum: sha1:ccbf09e8e845391593c3189706cde0b420c98e92
+  docs/models/operations/get-instagram-profile-response-body.md:
+    last_write_checksum: sha1:bfe1e79eb85893176459f09b9b1fcd4f187d77d4
+  docs/models/operations/get-linked-in-company-data.md:
+    last_write_checksum: sha1:7fa5847ba6b3e125ddd2a4abe6d0a6e111b1f8e5
+  docs/models/operations/get-linked-in-company-response-body.md:
+    last_write_checksum: sha1:e5779069901a8740277532b1238b111cbf8a3096
+  docs/models/operations/get-linked-in-profile-response-body.md:
+    last_write_checksum: sha1:d844658cae9de4ac6032c6cc7269f226248d211f
+  docs/models/operations/get-monitor-request.md:
+    last_write_checksum: sha1:51ecef9bfe867fdc37cca16c9da1d011b99f9797
+  docs/models/operations/get-operation-request.md:
+    last_write_checksum: sha1:3097f5d2a595afbaf7b98c922396ca43395e0567
+  docs/models/operations/get-search-result-request.md:
+    last_write_checksum: sha1:2aa2bfac1ff5b83241079efed5c6521fa9e01fdd
+  docs/models/operations/get-tik-tok-profile-response-body.md:
+    last_write_checksum: sha1:016f1b9d8f026b20f45c8470f9d0fe2254ba71ad
+  docs/models/operations/list-instagram-followers-response-body.md:
+    last_write_checksum: sha1:3572d886b0389a7143b4d42153b1c6981e20b632
+  docs/models/operations/list-instagram-following-response-body.md:
+    last_write_checksum: sha1:ee8aac148f12eec3f9f58c242ece12e3a35b2763
+  docs/models/operations/list-instagram-post-comments-response-body.md:
+    last_write_checksum: sha1:490687af866ffecd2e9f623d2bff11afbb40143d
+  docs/models/operations/list-instagram-posts-response-body.md:
+    last_write_checksum: sha1:f605f9e5b7295baf24897fa04ccef5952b328b6f
+  docs/models/operations/list-linked-in-company-posts-response-body.md:
+    last_write_checksum: sha1:7061699facaa6d8a119b3a2b03ba3f1977de23b6
+  docs/models/operations/list-linked-in-post-comments-response-body.md:
+    last_write_checksum: sha1:35efce63a7fe29aee9c754f287fc4f6d53458b26
+  docs/models/operations/list-linked-in-post-reactions-response-body.md:
+    last_write_checksum: sha1:5e2e3344a06b459655859e824353f691826a421e
+  docs/models/operations/list-linked-in-profile-comments-response-body.md:
+    last_write_checksum: sha1:49b248e5091d33bdb4652ed5cc58db0584620354
+  docs/models/operations/list-linked-in-profile-posts-response-body.md:
+    last_write_checksum: sha1:d4e6fd2167c3858485dbd8c04f89a9942b747e89
+  docs/models/operations/list-linked-in-profile-reactions-response-body.md:
+    last_write_checksum: sha1:cde3ce1d24cdcfc74316d37eb7c6d3d2351c3936
+  docs/models/operations/list-monitor-events-request.md:
+    last_write_checksum: sha1:4edc7df7b19c0762792700e4137e0eae8409826d
+  docs/models/operations/list-monitors-request.md:
+    last_write_checksum: sha1:158d62ae75677c8553047d4789207f988415dfb3
+  docs/models/operations/list-searches-request.md:
+    last_write_checksum: sha1:4664f663d327ef2000d98e5b07e7a81474081bc1
+  docs/models/operations/location.md:
+    last_write_checksum: sha1:2b1408e46cae1c3616ec7e6eefcd72b5264e5921
+  docs/models/operations/run-monitor-now-request.md:
+    last_write_checksum: sha1:a76a0ab9dbdef0c6371bf389919a56eb2d74360d
+  docs/models/operations/scrape-web-page-response-body.md:
+    last_write_checksum: sha1:ca1c2a1a7f7d34dfd5fa1257e54bd0578dfc4af2
+  docs/models/operations/search-companies-request.md:
+    last_write_checksum: sha1:706236f68628c9691da76806346d2f7f5cb6c9c4
+  docs/models/operations/search-linked-in-keyword-posts-response-body.md:
+    last_write_checksum: sha1:5d72cb098bccea71c24a90cbb1786414811ac79b
+  docs/models/operations/search-people-request.md:
+    last_write_checksum: sha1:c4e285382c5b4da8323cff81cf331fcb0c8c3ab9
+  docs/models/operations/search-web-response-body.md:
+    last_write_checksum: sha1:f037329304fe1b8dd4f4a18f4e23e7067ef11fea
+  docs/models/operations/start-deep-research-request.md:
+    last_write_checksum: sha1:f317e8264163d33795aec92226831ca233270edb
+  docs/models/operations/submit-enrichment-request.md:
+    last_write_checksum: sha1:36ec1261656dbefbb8fc8815d4932dd0bbd8e26b
+  docs/models/operations/submit-enrichment-response.md:
+    last_write_checksum: sha1:9d7b165dc8a2dd56ef951d5453dbfa585dc9c7cf
+  docs/models/operations/submit-search-request.md:
+    last_write_checksum: sha1:2e62e0351fbe021a787a1847757f653a1a9214bd
+  docs/models/operations/submit-search-response.md:
+    last_write_checksum: sha1:63a5eae14b2a9847521d75bf2b8373ccf5404648
+  docs/models/operations/update-monitor-request.md:
+    last_write_checksum: sha1:c76c49b9c0fb96a0e54aeb94768a7b52b9e52f83
+  docs/models/person-identifier-record-dto.md:
+    last_write_checksum: sha1:21fe1b544bedb1e6b39b4c817fa6b682986e3ca7
+  docs/models/platform-instagram-followers-dto.md:
+    last_write_checksum: sha1:fc99ce23415a15047db2cb52dcbef5ab7e128e98
+  docs/models/platform-instagram-following-dto.md:
+    last_write_checksum: sha1:2d28f2f14d706d3e030706ac16c445b2f01dabc9
+  docs/models/platform-instagram-post-comments-dto.md:
+    last_write_checksum: sha1:1d2507f1ee82b92257c16041f46aa0716ff935a7
+  docs/models/platform-instagram-post-details-dto.md:
+    last_write_checksum: sha1:f9c57a7e5d516add3bfced031be9ee2edcace4fa
+  docs/models/platform-instagram-username-dto.md:
+    last_write_checksum: sha1:f41d867d895b2c2f0af32f1a714c6b697487b04a
+  docs/models/platform-linked-in-company-dto.md:
+    last_write_checksum: sha1:df63221683ac98da391dd564a7b2b18cbf6bda34
+  docs/models/platform-linked-in-company-posts-dto.md:
+    last_write_checksum: sha1:f953c0527105053f4dcc970c8a4d7d1c39f9bd62
+  docs/models/platform-linked-in-finder-dto.md:
+    last_write_checksum: sha1:708eafa99b8114a8e42314d2741fa8392e55dfaf
+  docs/models/platform-linked-in-keyword-posts-dto.md:
+    last_write_checksum: sha1:5ded4db6acefe5d54fd2d1be284e0274aaaddfe5
+  docs/models/platform-linked-in-post-urls-dto.md:
+    last_write_checksum: sha1:ed5a2b39dc9c7be90e5636b81785107875a821b8
+  docs/models/platform-linked-in-profile-activity-dto.md:
+    last_write_checksum: sha1:2960d710211f65500b3ec9fa7fb0a413442ccbaf
+  docs/models/platform-linked-in-profile-dto.md:
+    last_write_checksum: sha1:7395732901104da57e4050588b690dcbde9c9481
+  docs/models/platform-linked-in-profile-posts-dto.md:
+    last_write_checksum: sha1:0ed806bc83be0f3eb1881e8ffa739346e7130bae
+  docs/models/platform-tik-tok-username-dto.md:
+    last_write_checksum: sha1:c85977fd8470a5597e71e401859d8d3609a12b14
+  docs/models/platform-web-crawl-dto.md:
+    last_write_checksum: sha1:e0ca139d1acec7fc15a6cd2ee4070444bed074eb
+  docs/models/platform-web-scrape-dto.md:
+    last_write_checksum: sha1:17c9099e8155ad8d9974c7723385df2525ec4c75
+  docs/models/platform-web-search-dto.md:
+    last_write_checksum: sha1:1a27472a49d090297ce089a0abd070c4c488943a
+  docs/models/post-company-search-dto.md:
+    last_write_checksum: sha1:fd1b83b322e85ed45b5f1f3e70fe14c7870b6ea4
+  docs/models/post-enrichment-dto.md:
+    last_write_checksum: sha1:3aac82237aae1fa0b73e8fa067ebc45d15fc9580
+  docs/models/post-people-search-dto.md:
+    last_write_checksum: sha1:9a68c94b3e0cde2864af2da9b66b6c34088eb599
+  docs/models/post-search-dto-type.md:
+    last_write_checksum: sha1:a9a7fdbc010e092494327afdb6d5e5ad6fcd1f8b
+  docs/models/post-search-dto.md:
+    last_write_checksum: sha1:8601ac518bffdf30856de6d2cd754c0ce4888c53
+  docs/models/posted-limit.md:
+    last_write_checksum: sha1:d0c12ba228175ee3d771eb3ca5e794f7a602d439
+  docs/models/profile.md:
+    last_write_checksum: sha1:d15b32cbe31145e86d2460fb27c767de71f2c5ba
+  docs/models/public-response-meta-dto.md:
+    last_write_checksum: sha1:b390e552c76eee397734452b1231ba8a5d14b8e4
+  docs/models/public-validation-error-item-dto.md:
+    last_write_checksum: sha1:1b66bf6e958b6cb235ad4d0cb142569db2534040
+  docs/models/relation-type.md:
+    last_write_checksum: sha1:dbe432cc1b8a316746e7da097773f7faf5d9fe19
+  docs/models/reposted-by.md:
+    last_write_checksum: sha1:33bd11d0427416757e3e40876f3f2233a396709d
+  docs/models/run-now-body-dto.md:
+    last_write_checksum: sha1:29eac2f438853ad710e9d76212e363cf53349070
+  docs/models/search-accepted-dto-status.md:
+    last_write_checksum: sha1:b4c261f739a2044b51567490ce8921217391974a
+  docs/models/search-accepted-dto.md:
+    last_write_checksum: sha1:8e3d8250b0b555ac52be3117137f9b1818368145
+  docs/models/search-accepted-meta-dto.md:
+    last_write_checksum: sha1:fd3498eaa0b66dd87d75484a6a5a5e071c5adbca
+  docs/models/search-depth.md:
+    last_write_checksum: sha1:37d641d09c38f5792cd4056464361937f39a865d
+  docs/models/search-list-response-dto.md:
+    last_write_checksum: sha1:8b7e33e5de5fe998f3403c6d6237966c6f130d85
+  docs/models/search-result-dto-status.md:
+    last_write_checksum: sha1:20d8e97bfffe93a094add849af64ccc309455a77
+  docs/models/search-result-dto-type.md:
+    last_write_checksum: sha1:441443586360cb1bb66db2724509e75e36d36a50
+  docs/models/search-result-dto.md:
+    last_write_checksum: sha1:a44de12cbd6753ce165e6371f5547cc462cbb3d5
+  docs/models/search-result-item-dto.md:
+    last_write_checksum: sha1:1eb2fde598445d223a78684bdf63c568ba1f1b9a
+  docs/models/security.md:
+    last_write_checksum: sha1:13a6482d82d43155c256566093d2c614a9b5ed08
+  docs/models/signals-config-dto.md:
+    last_write_checksum: sha1:faa917f75bf942ea94e8b6c7ead91fa1b512aeb0
+  docs/models/sort-by.md:
+    last_write_checksum: sha1:3afdf5ace600573407a84deeefcb136249ae0b59
+  docs/models/status.md:
+    last_write_checksum: sha1:d29792b81f8dec7e9b2bef3effff3fd494402646
+  docs/models/tik-tok-profile-scrape-response-dto.md:
+    last_write_checksum: sha1:1523a7bbdf96ef0b3c6ce53bf4d6d9a2f2bcead9
+  docs/models/tik-tok-video-response-dto.md:
+    last_write_checksum: sha1:b2013e91e3341f5356351eff52349061d40b1602
+  docs/models/title-match.md:
+    last_write_checksum: sha1:37d350fa77731b8afc6fa5cf9a7b5e85bb24940a
+  docs/models/topic.md:
+    last_write_checksum: sha1:cd7529659d7e7a372f23efd9c7e661fcc26f0e73
+  docs/models/type.md:
+    last_write_checksum: sha1:1f056eb7137df68905fcfc640c140f49eff025fd
+  docs/models/update-monitor-dto-config.md:
+    last_write_checksum: sha1:d8db13093e262735d8b691cd88a5691e6390fc6e
+  docs/models/update-monitor-dto-status.md:
+    last_write_checksum: sha1:54c003d5957c5fcdec66a736ec6eb7c51cf631b6
+  docs/models/update-monitor-dto.md:
+    last_write_checksum: sha1:8806e414dad0319c319f1a7f2d7d8222ba120162
+  docs/models/web-crawl-page-response-dto.md:
+    last_write_checksum: sha1:dd5c38216bbe6b70ef0d4c9ed478e618ec9207f3
+  docs/models/web-crawl-response-dto.md:
+    last_write_checksum: sha1:6cd9587471b6a50fe1b4e78d0072f97f0c19eb78
+  docs/models/web-scrape-response-dto.md:
+    last_write_checksum: sha1:342be5cafd2996208e5170e44eb780337a6f31cc
+  docs/models/web-search-response-dto.md:
+    last_write_checksum: sha1:f42d7d6f6fc84c5dac7466d596fd04d17cadad20
+  docs/models/web-search-result-item-response-dto.md:
+    last_write_checksum: sha1:f8b0fa0942cb5edaca4f5650e04df0ac16a124a0
+  docs/sdks/companies/README.md:
+    last_write_checksum: sha1:6a558007901a8ab41e60352a8149b7838e63e18c
+  docs/sdks/deepresearch/README.md:
+    last_write_checksum: sha1:a34b0991c6e8f96ad6a5c7b8d495b130c475b78b
+  docs/sdks/enrichments/README.md:
+    last_write_checksum: sha1:24f5503bc52cfe77a4519545c65e409a11d853b0
+  docs/sdks/instagram/README.md:
+    last_write_checksum: sha1:1fa990ed282352b4a48c5b38b4a5175e6f0ff291
+  docs/sdks/linkedin/README.md:
+    last_write_checksum: sha1:d207da1dd3a5bf1c3b431d593a4b3efd939a6779
+  docs/sdks/monitors/README.md:
+    last_write_checksum: sha1:13a5c8e21ed7a108bcc9dbf67b3880fbc3c4d631
+  docs/sdks/operations/README.md:
+    last_write_checksum: sha1:79ea84edb9111c2713af06af59f9991c46d783b4
+  docs/sdks/people/README.md:
+    last_write_checksum: sha1:960938b73f252d9c47dbc194138f67358583806e
+  docs/sdks/search/README.md:
+    last_write_checksum: sha1:3e240519a24361f25b5a2d63d11dc4b0601f7069
+  docs/sdks/tiktok/README.md:
+    last_write_checksum: sha1:abd16d5f44d7b86550290d94dd6a3a22623a9d16
+  docs/sdks/web/README.md:
+    last_write_checksum: sha1:322a56f2d7d1ebb1e0adf9d16530be6649f27e92
+  examples/.env.template:
+    last_write_checksum: sha1:3023753dc8e1c1f95a1433860cb0522d134cc10d
+  examples/README.md:
+    last_write_checksum: sha1:47b561eb870a1052b24e1cb4b812fce53acdb777
+  examples/companiesSearch.example.ts:
+    last_write_checksum: sha1:02102f019189f640cc51ce55054b8879f71d6c4d
+  examples/package.json:
+    last_write_checksum: sha1:f224e5f8740b6d975e03d2117e637c8885560e57
+  jsr.json:
+    last_write_checksum: sha1:6ae81d41ca412e4be367ad072cb0a41148bc653f
+  package.json:
+    last_write_checksum: sha1:f85251eace8684f0fb6e9374812a7c33a8052068
+  src/core.ts:
+    last_write_checksum: sha1:869c4ff5d440d524ef1c58d539dbc840d72719a1
+  src/funcs/companies-search.ts:
+    last_write_checksum: sha1:25aebcfe9c13bb517b49ad2ccd1627f61b08f44c
+  src/funcs/deep-research-start.ts:
+    last_write_checksum: sha1:46864a9f36d0a69a1ec36a411530fe5849163237
+  src/funcs/enrichments-get.ts:
+    last_write_checksum: sha1:bb8138514aefb4a5409140e678dcd41c4e6493d5
+  src/funcs/enrichments-submit.ts:
+    last_write_checksum: sha1:2b4e314ab4ead61d0e3ed7ef73bc81c94bf4aa7b
+  src/funcs/monitors-create.ts:
+    last_write_checksum: sha1:bea018537c99f18cf3bf77ae3e0a5898db7186c7
+  src/funcs/monitors-delete.ts:
+    last_write_checksum: sha1:20bc4648240521f578d1e0d6302bdf8ada922653
+  src/funcs/monitors-get.ts:
+    last_write_checksum: sha1:f235b58f24e18ee61c39f3a4d710988d26ea435e
+  src/funcs/monitors-list-events.ts:
+    last_write_checksum: sha1:eb5c977e5915a080f02f4bef7679174749f68a28
+  src/funcs/monitors-list.ts:
+    last_write_checksum: sha1:cc7437d95501e41c547f71d22ad6e4875003854c
+  src/funcs/monitors-run-now.ts:
+    last_write_checksum: sha1:3626c5784f2672835e8cf555334d0a069d581243
+  src/funcs/monitors-update.ts:
+    last_write_checksum: sha1:7e68d5f1f087bbe604c3dfe3ceafe1a3a136f0aa
+  src/funcs/operations-get.ts:
+    last_write_checksum: sha1:11e8423b06e0ec78bd3d51ecbf4975da998c1fd7
+  src/funcs/people-search.ts:
+    last_write_checksum: sha1:c93a00156aaf00fc189833f7d9348d1da121c2f2
+  src/funcs/scrapers-instagram-get-post.ts:
+    last_write_checksum: sha1:e8eff182c0d3d852ea237487626479e62e6bc2fa
+  src/funcs/scrapers-instagram-get-profile.ts:
+    last_write_checksum: sha1:97aab4e7b8a570080abbefbd1fc26027c922959d
+  src/funcs/scrapers-instagram-list-followers.ts:
+    last_write_checksum: sha1:70be89f79a9361e439e396fe0f1e8d962ddff6b6
+  src/funcs/scrapers-instagram-list-following.ts:
+    last_write_checksum: sha1:26efb6a65761d665319dde0c99bc1fd7fa3c1e1d
+  src/funcs/scrapers-instagram-list-post-comments.ts:
+    last_write_checksum: sha1:cb1b13cbac8d544faa23723e422431546d1d823a
+  src/funcs/scrapers-instagram-list-posts.ts:
+    last_write_checksum: sha1:4f6c619d8442227f348a328450400cc3f3efb06c
+  src/funcs/scrapers-linkedin-find-companies.ts:
+    last_write_checksum: sha1:77b387482b06969ccd1a474d6358c39601e21ca3
+  src/funcs/scrapers-linkedin-get-company.ts:
+    last_write_checksum: sha1:994bf60fc0e51dfda192d61e15299fd8b1a77d5e
+  src/funcs/scrapers-linkedin-get-profile.ts:
+    last_write_checksum: sha1:304c4c274d9c1414a89fb22863bac4d8b20ed6e2
+  src/funcs/scrapers-linkedin-list-company-posts.ts:
+    last_write_checksum: sha1:a799ad9dfe4809e40418b9684fde4b1872929583
+  src/funcs/scrapers-linkedin-list-post-comments.ts:
+    last_write_checksum: sha1:4337469e64e1303842957134edce1466e59919f5
+  src/funcs/scrapers-linkedin-list-post-reactions.ts:
+    last_write_checksum: sha1:8beaf0e95127d5ba68a13f9d2d522a7a040e81a3
+  src/funcs/scrapers-linkedin-list-profile-comments.ts:
+    last_write_checksum: sha1:8f8c74a861dd535638fb80f26b99de596cbf0602
+  src/funcs/scrapers-linkedin-list-profile-posts.ts:
+    last_write_checksum: sha1:3944b9bf3ae37b8af4c1175c1a95f61df929b543
+  src/funcs/scrapers-linkedin-list-profile-reactions.ts:
+    last_write_checksum: sha1:628782b372b2c49198f59904f036bcb98628d6e4
+  src/funcs/scrapers-linkedin-search-keyword-posts.ts:
+    last_write_checksum: sha1:250e190e2c28194b267cc47157ded45c7d739d88
+  src/funcs/scrapers-tiktok-get-profile.ts:
+    last_write_checksum: sha1:d1e5ed6d3fa426474845f2327b573fc0a0238eb4
+  src/funcs/scrapers-web-crawl.ts:
+    last_write_checksum: sha1:89d8d79b38eca693fb378d210bbcfa913a2b1f1e
+  src/funcs/scrapers-web-scrape.ts:
+    last_write_checksum: sha1:2d5d078439d8891675c848a9524f657f15732f97
+  src/funcs/scrapers-web-search.ts:
+    last_write_checksum: sha1:b072b50e263dfed3df5b5f8bc0c77c8cf8ef8bb2
+  src/funcs/search-get-result.ts:
+    last_write_checksum: sha1:2eec66c0886c5c7a6aeb1fb084b879686a4f62a5
+  src/funcs/search-list.ts:
+    last_write_checksum: sha1:7059ea7dc30e2835916bcd7b4eaa888dff8daec2
+  src/funcs/search-submit.ts:
+    last_write_checksum: sha1:1679736fb193e13b73640bc6443493f65370304d
+  src/hooks/hooks.ts:
+    last_write_checksum: sha1:3a90d88b4c6c07247db8e5f6441a79538232394e
+  src/hooks/index.ts:
+    last_write_checksum: sha1:1a11c073a6cd792932218e1d4ed36b8567bad8ef
+  src/hooks/types.ts:
+    last_write_checksum: sha1:27a3444c4839bec58ae89820fd8c2483edafc3f4
+  src/index.ts:
+    last_write_checksum: sha1:35c9cde3ae14b18b3f893a1afe8b6c44f8760f24
+  src/lib/base64.ts:
+    last_write_checksum: sha1:8c94164f2f78e6041c853186fa01f659591f5913
+  src/lib/config.ts:
+    last_write_checksum: sha1:21644f2c6bb562bb7cc3d455e399ce5e7a32dc82
+  src/lib/dlv.ts:
+    last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250
+  src/lib/encodings.ts:
+    last_write_checksum: sha1:3e6784ec96431e0d8f98f67b3eae38d7b368264c
+  src/lib/env.ts:
+    last_write_checksum: sha1:b371f218a145adada38e9ffc87f15934759551be
+  src/lib/files.ts:
+    last_write_checksum: sha1:795c14026405d547bfc47012f7ad9666e530fa7f
+  src/lib/http.ts:
+    last_write_checksum: sha1:797cbf16d3c7c4d62d3ba0eedb08617524938457
+  src/lib/is-plain-object.ts:
+    last_write_checksum: sha1:df687f25a9590b6fd95d39df41a652ae3fd4e517
+  src/lib/logger.ts:
+    last_write_checksum: sha1:0ec9d3a2a34c362746b767e4f9a746c055d57a7b
+  src/lib/matchers.ts:
+    last_write_checksum: sha1:fbbc0a9b4834f5b901c6a0eb3dbeb905ab0ce7f5
+  src/lib/primitives.ts:
+    last_write_checksum: sha1:987869fc54790b9c22e9182099103d6aa7c67016
+  src/lib/retries.ts:
+    last_write_checksum: sha1:f3da74dffcbe2756c69393f8600205aa1dc06e68
+  src/lib/schemas.ts:
+    last_write_checksum: sha1:b4b5fd22340ebd5b2914ee7b177c797b28fba7ef
+  src/lib/sdks.ts:
+    last_write_checksum: sha1:e29a55502c0d0dbc6d66fcaea61f3c9f963f463d
+  src/lib/security.ts:
+    last_write_checksum: sha1:cc766e41d40e2cac994e7ddb7c13e417f31c089b
+  src/lib/url.ts:
+    last_write_checksum: sha1:3bceadd74bf0b31adf13eb06b7531077c3e07d65
+  src/models/create-monitor-dto.ts:
+    last_write_checksum: sha1:33884700bfac8cabe45227bccbb8ba16450f95dc
+  src/models/deep-research-accepted-meta-dto.ts:
+    last_write_checksum: sha1:0ba83b2734a47067bb9a2d44e4ac7c91432aa207
+  src/models/deep-research-budget-request-dto.ts:
+    last_write_checksum: sha1:d359c37dd1772e90890039975e3e6b58b6992bab
+  src/models/deep-research-queued-response-dto.ts:
+    last_write_checksum: sha1:37aabdbbe98eed9fe679fc091e33da8974940f58
+  src/models/deep-research-request-dto.ts:
+    last_write_checksum: sha1:06824834c5087077bb059ca0123e88eded194f08
+  src/models/enrichment-queued-response-dto.ts:
+    last_write_checksum: sha1:7d6d3261375b4a00eecc4e9215884e82b13965b1
+  src/models/enrichment-sync-response-dto.ts:
+    last_write_checksum: sha1:0f33dc5aa25059a3223b26a2b299455a7751ef18
+  src/models/entity-company-nested-filter-dto.ts:
+    last_write_checksum: sha1:3bb6505eeae2a25ed56d87391f7cc06dc1b3e50f
+  src/models/entity-employee-count-filter-dto.ts:
+    last_write_checksum: sha1:1dedb7e46a15805b9beaf78a012e4c8e72061739
+  src/models/entity-search-accepted-dto.ts:
+    last_write_checksum: sha1:db7b164a60909d9804535626202969856d853e5f
+  src/models/entity-search-accepted-public-dto.ts:
+    last_write_checksum: sha1:0bed87c20be0f2c598ac967379bb1b6f52294f4e
+  src/models/entity-search-filters-dto.ts:
+    last_write_checksum: sha1:5c05bb5b13f95b51ebc87c3d6805966d10992c54
+  src/models/errors/http-client-errors.ts:
+    last_write_checksum: sha1:994ced121c54fecd0af038ccfb7855fbfd3868ec
+  src/models/errors/index.ts:
+    last_write_checksum: sha1:caf742f84a1825f59773007dd60c041aed43de31
+  src/models/errors/public-error-response-dto.ts:
+    last_write_checksum: sha1:b4bb012b68c3c2614d9b828d4d21d96be3042855
+  src/models/errors/response-validation-error.ts:
+    last_write_checksum: sha1:881fbc54fb5b44320fc629514493f1185ccf1fb7
+  src/models/errors/sdk-validation-error.ts:
+    last_write_checksum: sha1:92771987c251f02fd86cfd824a3be709cd3c2837
+  src/models/errors/the-hog-default-error.ts:
+    last_write_checksum: sha1:6056bcc44161656761c64885fbe5e5243f9fc10c
+  src/models/errors/the-hog-error.ts:
+    last_write_checksum: sha1:944038a84036d3d6a9576ee3a25037b4d3f149dc
+  src/models/index.ts:
+    last_write_checksum: sha1:8ada2f7dd1d41b853ac2ebbde823e4ab785152f2
+  src/models/instagram-comment-response-dto.ts:
+    last_write_checksum: sha1:0d4ab0e4cdfd4d321ba2401582701aa68dd1895a
+  src/models/instagram-follow-edge-response-dto.ts:
+    last_write_checksum: sha1:6bc3a3746709ca88db8aa66bdb3daf4461300b38
+  src/models/instagram-follow-profile-response-dto.ts:
+    last_write_checksum: sha1:f805f6dc2ac5b986351ec8ba4ff76e685d9b0dd4
+  src/models/instagram-follow-scrape-response-dto.ts:
+    last_write_checksum: sha1:e86225aae492c15253f18ad87a45805c3dd35afc
+  src/models/instagram-post-response-dto.ts:
+    last_write_checksum: sha1:e2efe3a729663798750f9c838fbbcd6ba06d9e92
+  src/models/linked-in-comment-actor-response-dto.ts:
+    last_write_checksum: sha1:eb49a18d9573176f25d9f4b4beac54c3269523d4
+  src/models/linked-in-comment-engagement-response-dto.ts:
+    last_write_checksum: sha1:f87f46e58f3c3449ef08a84f361ff47f9ab21052
+  src/models/linked-in-company-posts-response-dto.ts:
+    last_write_checksum: sha1:c551beaba2137477d3b2ad5f1a702a520e0c23c1
+  src/models/linked-in-finder-response-dto.ts:
+    last_write_checksum: sha1:ca3b5bc4a998263b2f47d13aedebfb0bb18ecb1e
+  src/models/linked-in-keyword-posts-config-body-dto.ts:
+    last_write_checksum: sha1:d5f61d528fdbd915bcd9bcfe02dce05c34966766
+  src/models/linked-in-post-comment-response-dto.ts:
+    last_write_checksum: sha1:3e4d32888b4318e62427b199151517a1ebb9cf2a
+  src/models/linked-in-post-reaction-response-dto.ts:
+    last_write_checksum: sha1:455e61e74b8da6901c28445189a49f33d62851d3
+  src/models/linked-in-post-response-dto.ts:
+    last_write_checksum: sha1:517694865340a3d97fa5f0a5e1be95736e2b76f1
+  src/models/linked-in-profile-activity-post-response-dto.ts:
+    last_write_checksum: sha1:fefd77b0c66ad2c66e8e439555646c8ce7fff832
+  src/models/linked-in-profile-comment-response-dto.ts:
+    last_write_checksum: sha1:67e696f799caee8c9f25f4009755ccfb7d03aef6
+  src/models/linked-in-profile-posts-response-dto.ts:
+    last_write_checksum: sha1:e968fe9da69b6a9b885dda6684c4377d30e9e8da
+  src/models/linked-in-profile-reaction-response-dto.ts:
+    last_write_checksum: sha1:d4a9e848fee4bef44ebc661e32ddabf3af6d1cd4
+  src/models/linked-in-reaction-actor-response-dto.ts:
+    last_write_checksum: sha1:7224beb70e88cdd31557c6534489babd86423036
+  src/models/monitor-event-dto.ts:
+    last_write_checksum: sha1:acb02671044bd8858bfd964d638aac8f30412dff
+  src/models/monitor-event-list-response-dto.ts:
+    last_write_checksum: sha1:8c5194f925960a5058d566d93aabd3105900d1b2
+  src/models/monitor-list-response-dto.ts:
+    last_write_checksum: sha1:8571630dfe871ad947c52843bd0ebb7a82134454
+  src/models/monitor-response-dto.ts:
+    last_write_checksum: sha1:4d9884529f37591604cefcaf260ede40d1317cb4
+  src/models/operation-response-dto.ts:
+    last_write_checksum: sha1:1d46fe7279dfbacc4f8fc60b8cd0671c9418e2ec
+  src/models/operations/crawl-web-site.ts:
+    last_write_checksum: sha1:9c0fc5cffe0591ccb0f808d2f7345f24d1dfb982
+  src/models/operations/delete-monitor.ts:
+    last_write_checksum: sha1:68111fddbcba1c8257ccbd214134a73a66fb5e09
+  src/models/operations/find-linked-in-companies.ts:
+    last_write_checksum: sha1:5178e9d8ca12dbd455ec7aeed306201dbfea9c01
+  src/models/operations/get-enrichment.ts:
+    last_write_checksum: sha1:f2d3b1f8c38d90b03924ff044c4174a30fda7857
+  src/models/operations/get-instagram-post.ts:
+    last_write_checksum: sha1:9ff75ac613d50d7281c4bd6e55681b1a3e4a3b2c
+  src/models/operations/get-instagram-profile.ts:
+    last_write_checksum: sha1:161b7e4ae14040867db1ec545a3464954f366e4d
+  src/models/operations/get-linked-in-company.ts:
+    last_write_checksum: sha1:a9a555d444355f95a36c14ffce6754c99b39f437
+  src/models/operations/get-linked-in-profile.ts:
+    last_write_checksum: sha1:ac0b87d1a0bdd91357f4ecceb19d81c5b59397c4
+  src/models/operations/get-monitor.ts:
+    last_write_checksum: sha1:e129d6041eb60042bb061521ec5f0397264784b4
+  src/models/operations/get-operation.ts:
+    last_write_checksum: sha1:23edf3024f877f14e6863d4d26e5d19ff9d72698
+  src/models/operations/get-search-result.ts:
+    last_write_checksum: sha1:97854d851bd450df951c15420941d2b44885cd4e
+  src/models/operations/get-tik-tok-profile.ts:
+    last_write_checksum: sha1:2d33aa2a5fdb95c559908f2c16d7dd6bf5384f8b
+  src/models/operations/index.ts:
+    last_write_checksum: sha1:91beb1262cfcd0673d7e722abf13a9ab68b6ca7e
+  src/models/operations/list-instagram-followers.ts:
+    last_write_checksum: sha1:d3478d46a6116956da3c6bdc69d87f72ee7e72d0
+  src/models/operations/list-instagram-following.ts:
+    last_write_checksum: sha1:2c2dbcc9eed26f4505b157cede4236b79b1a24f3
+  src/models/operations/list-instagram-post-comments.ts:
+    last_write_checksum: sha1:3ec8dfcfd450e20e5fe4cef55564c5f8d702714b
+  src/models/operations/list-instagram-posts.ts:
+    last_write_checksum: sha1:bcd2490eebceb9222baec2af32ac32f00cb44c0a
+  src/models/operations/list-linked-in-company-posts.ts:
+    last_write_checksum: sha1:0ba0532aef50f526b9ba7f818a74a6760151676e
+  src/models/operations/list-linked-in-post-comments.ts:
+    last_write_checksum: sha1:bc5cc00d2ba7e2a87052b6675c593f3135024f88
+  src/models/operations/list-linked-in-post-reactions.ts:
+    last_write_checksum: sha1:0c596f656b644fd6559a23a1243a1b948eac31b9
+  src/models/operations/list-linked-in-profile-comments.ts:
+    last_write_checksum: sha1:0e621ca3e693439fb348a7126933ae03c2b1c527
+  src/models/operations/list-linked-in-profile-posts.ts:
+    last_write_checksum: sha1:1a9988239341632ebab3f84816aee01fc2ebd8b6
+  src/models/operations/list-linked-in-profile-reactions.ts:
+    last_write_checksum: sha1:1a651b4d55cca69e050b3824c14dcdcc8934da2d
+  src/models/operations/list-monitor-events.ts:
+    last_write_checksum: sha1:16553ea5cdc902c306f74ec87207ad3a6fe1536d
+  src/models/operations/list-monitors.ts:
+    last_write_checksum: sha1:2bffb5094195285d68c2833979072c8358320bce
+  src/models/operations/list-searches.ts:
+    last_write_checksum: sha1:3d9e219496e25f8079f61dd05d235357369eee88
+  src/models/operations/run-monitor-now.ts:
+    last_write_checksum: sha1:c66d8718cd4450b879276e8910d2d51c9ac6eb04
+  src/models/operations/scrape-web-page.ts:
+    last_write_checksum: sha1:94d047bbf52452f55aa67b05133921271b0c6fc1
+  src/models/operations/search-companies.ts:
+    last_write_checksum: sha1:cbaac553d3a8fcee98822440ce2c22514f344fd6
+  src/models/operations/search-linked-in-keyword-posts.ts:
+    last_write_checksum: sha1:5363d0acfd29a8a2b750d01b53a3022da1020c4d
+  src/models/operations/search-people.ts:
+    last_write_checksum: sha1:56e320b8a47c0393fa7b94f080db2581a5a8a401
+  src/models/operations/search-web.ts:
+    last_write_checksum: sha1:f57c38cc38bb00789901d02a893515ae93ba380b
+  src/models/operations/start-deep-research.ts:
+    last_write_checksum: sha1:0a7adba84793fb1c576ae18ee4ea3503c9361152
+  src/models/operations/submit-enrichment.ts:
+    last_write_checksum: sha1:028496ad9cdc3c163e638dbd19d2f7ce287107c7
+  src/models/operations/submit-search.ts:
+    last_write_checksum: sha1:31a92343afb4042d695fae9cbd02f5f4c4913089
+  src/models/operations/update-monitor.ts:
+    last_write_checksum: sha1:b2a83ab654577531547db1a6859d78c6bd175062
+  src/models/person-identifier-record-dto.ts:
+    last_write_checksum: sha1:fda0787ec6b3686ac677c0d1ac9c940b5bcc7fac
+  src/models/platform-instagram-followers-dto.ts:
+    last_write_checksum: sha1:88805aebb923f7d6e0537717f62bcb8aa011148e
+  src/models/platform-instagram-following-dto.ts:
+    last_write_checksum: sha1:b88a9f6f182b661e533f01e21978854be5cf95f2
+  src/models/platform-instagram-post-comments-dto.ts:
+    last_write_checksum: sha1:ba97d98a262da2b8eabdc6b4426a20690019bc0c
+  src/models/platform-instagram-post-details-dto.ts:
+    last_write_checksum: sha1:f5eed182868ab7d7c8368a9b04a4df4cb08743e2
+  src/models/platform-instagram-username-dto.ts:
+    last_write_checksum: sha1:9562319f0767c2cbc0fa4ac0d89cdbcc58b59b82
+  src/models/platform-linked-in-company-dto.ts:
+    last_write_checksum: sha1:99176c2e63ef3d5890fd853d6d49286bbbdbbf8f
+  src/models/platform-linked-in-company-posts-dto.ts:
+    last_write_checksum: sha1:b39020bf1c82b0630d8ebcc429aaeb4fdcee7de3
+  src/models/platform-linked-in-finder-dto.ts:
+    last_write_checksum: sha1:418306bfb02d7e0802055329f71a689a79e3bd31
+  src/models/platform-linked-in-keyword-posts-dto.ts:
+    last_write_checksum: sha1:c3502ba5926039e20eab29830607f1486d663737
+  src/models/platform-linked-in-post-urls-dto.ts:
+    last_write_checksum: sha1:172de3aae5293b7c1d32c9a364174fd6dc97fbc9
+  src/models/platform-linked-in-profile-activity-dto.ts:
+    last_write_checksum: sha1:499fe9bb1ce5abdf6efb336628a4fd0facddf6c9
+  src/models/platform-linked-in-profile-dto.ts:
+    last_write_checksum: sha1:b7da2e758247c07baaad8c316ece582a8a97fdf5
+  src/models/platform-linked-in-profile-posts-dto.ts:
+    last_write_checksum: sha1:641955b9574517963a8667a756c9220787d1ad16
+  src/models/platform-tik-tok-username-dto.ts:
+    last_write_checksum: sha1:65a1c9e42f7b1416122e9fffe3b29a83ecc18603
+  src/models/platform-web-crawl-dto.ts:
+    last_write_checksum: sha1:9f54a20727d5c26fb47a00e13a026fb7ad7d05af
+  src/models/platform-web-scrape-dto.ts:
+    last_write_checksum: sha1:228e330d8cdeb076ec628c8ea431f95f9965e4d5
+  src/models/platform-web-search-dto.ts:
+    last_write_checksum: sha1:ca337d8701bc12ea7d4df1c5c5b976740a05b6e1
+  src/models/post-company-search-dto.ts:
+    last_write_checksum: sha1:98992ba921a80154c1b39f31e2906e7f5fb7a28d
+  src/models/post-enrichment-dto.ts:
+    last_write_checksum: sha1:7ec46d9f64ed00fd6423894b3760df61fa5899d1
+  src/models/post-people-search-dto.ts:
+    last_write_checksum: sha1:f720532431916779f697285c6d9d5f59ccd76569
+  src/models/post-search-dto.ts:
+    last_write_checksum: sha1:f288e65fbf6651b418b72b935bfe4c9c3371d6d7
+  src/models/public-response-meta-dto.ts:
+    last_write_checksum: sha1:9ddb353ceb380310f625d1cab9c10536a9e0014c
+  src/models/public-validation-error-item-dto.ts:
+    last_write_checksum: sha1:750da46a398c57462602e79d10fdc795fd3c1875
+  src/models/run-now-body-dto.ts:
+    last_write_checksum: sha1:8ec133ad1506ae1f392d01bef1b4d7364aa470d1
+  src/models/search-accepted-dto.ts:
+    last_write_checksum: sha1:fd0d6f0d59b26cf380733be62d58339904596f67
+  src/models/search-accepted-meta-dto.ts:
+    last_write_checksum: sha1:5eca3851c6643bae3a60651dbede77743f859fb4
+  src/models/search-list-response-dto.ts:
+    last_write_checksum: sha1:e8dce6cfbfd51ff7c737e1a9ed226e8c360072b3
+  src/models/search-result-dto.ts:
+    last_write_checksum: sha1:6ef8b1c2dfbbefd8851c1070662f431c94bee1d6
+  src/models/search-result-item-dto.ts:
+    last_write_checksum: sha1:fa74c8286f1ca296e4fd4bb2bd761d0acca67c13
+  src/models/security.ts:
+    last_write_checksum: sha1:15cb16fd0a5c552a34856d48843e0970502b5389
+  src/models/signals-config-dto.ts:
+    last_write_checksum: sha1:5b04290df30574783b4f140bb2f819e5d39c7f57
+  src/models/tik-tok-profile-scrape-response-dto.ts:
+    last_write_checksum: sha1:ba7f5954377a9114dc2af924cfdda7a66e00bf2c
+  src/models/tik-tok-video-response-dto.ts:
+    last_write_checksum: sha1:a724437d285796db48e614cced572d0bdac7f992
+  src/models/update-monitor-dto.ts:
+    last_write_checksum: sha1:ff6dbaf0091fa9757dd4b4c76b5497e190484b50
+  src/models/web-crawl-page-response-dto.ts:
+    last_write_checksum: sha1:cb4963d57233157f9348b6b54cfc6e151f814336
+  src/models/web-crawl-response-dto.ts:
+    last_write_checksum: sha1:d81855be18aa5a98644fc5463fd6255c368c0f31
+  src/models/web-scrape-response-dto.ts:
+    last_write_checksum: sha1:3817d3d543e0e2a5559ab8b17b0b707295d90e16
+  src/models/web-search-response-dto.ts:
+    last_write_checksum: sha1:31db8d1fc52e0f15782902b2ef3e68d33d56b743
+  src/models/web-search-result-item-response-dto.ts:
+    last_write_checksum: sha1:bc8e3b7dbd39870d99ef76c13593159ff394e7cd
+  src/sdk/companies.ts:
+    last_write_checksum: sha1:c9a33992545b28ad5692d7f03a8022cd97d6b416
+  src/sdk/deep-research.ts:
+    last_write_checksum: sha1:56c612bffa916d6ed3ac8b0c842deb5d2a3ce4c8
+  src/sdk/enrichments.ts:
+    last_write_checksum: sha1:f319a99cafb90a2b388859f50c63fc26705e8c6f
+  src/sdk/index.ts:
+    last_write_checksum: sha1:ed6d64f2a6135349aa8498b8d8cff9ba85c7fb8f
+  src/sdk/instagram.ts:
+    last_write_checksum: sha1:0c556af27856b6b9d08b43a8fa712f22cd25eeab
+  src/sdk/linkedin.ts:
+    last_write_checksum: sha1:058ad96c35f9ab546cbaeeceafad2cc427753b3b
+  src/sdk/monitors.ts:
+    last_write_checksum: sha1:940d36d87d4bd83cbf0c50497b356b9c6be7d75b
+  src/sdk/operations.ts:
+    last_write_checksum: sha1:c30614739d0ead05588905457995b8c5b8154616
+  src/sdk/people.ts:
+    last_write_checksum: sha1:e5bd3419bbe4d54a5c288201a8d1a0e0ea125d0d
+  src/sdk/scrapers.ts:
+    last_write_checksum: sha1:2efc779ec91e0c2476074ca651c0cd08b696d32b
+  src/sdk/sdk.ts:
+    last_write_checksum: sha1:f120ffd55f32f1719e12e87cd3b26077f5f66c76
+  src/sdk/search.ts:
+    last_write_checksum: sha1:9dcda7c59033066e8eaa25ac0bacc57e1cd150d2
+  src/sdk/tiktok.ts:
+    last_write_checksum: sha1:f6d0910aea75761d1489a89b5be5de79279fac73
+  src/sdk/web.ts:
+    last_write_checksum: sha1:b5b847d4a445492cebe719a8f4757f4a1dd6e114
+  src/types/async.ts:
+    last_write_checksum: sha1:675d04bb4b4081dc3482f18de98674f9b446e7b4
+  src/types/blobs.ts:
+    last_write_checksum: sha1:fd681458b532138913c372b05b3e16407abaa7a1
+  src/types/const-date-time.ts:
+    last_write_checksum: sha1:ce05316b31b373401875d5e962d63d2422e09cf2
+  src/types/default-to-zero-value.ts:
+    last_write_checksum: sha1:2820c0bc8e71d475e79cc6b6947ca18d93f6310c
+  src/types/enums.ts:
+    last_write_checksum: sha1:d7d0ffad0c128a11c5feb1f0ae8f3b507ee03c14
+  src/types/fp.ts:
+    last_write_checksum: sha1:d24994d58f37a1ca106847fcc6d2e976c6f1c093
+  src/types/index.ts:
+    last_write_checksum: sha1:a591fec0ad2231615101ebb6a95cc4d043733a6c
+  src/types/operations.ts:
+    last_write_checksum: sha1:c49e724cfb1259296381cb57bc0fcdd2eae45865
+  src/types/primitives.ts:
+    last_write_checksum: sha1:a521a09fa18b1af857d29477d3aa7007b42583ed
+  src/types/rfcdate.ts:
+    last_write_checksum: sha1:8e5f382e02fe21c2f2e24deb1b7bbf8cddd3dd16
+  src/types/smart-union.ts:
+    last_write_checksum: sha1:9928dbec2d8ad501da8518c10ec6df3b441eb5c9
+  src/types/streams.ts:
+    last_write_checksum: sha1:cc9ced2dd34a76c3a1bd7784ccda1cc3b37ab9a9
+  src/types/unrecognized.ts:
+    last_write_checksum: sha1:d33ac686528492f4cdc0dbf81ed343b4afe020fe
+  tsconfig.json:
+    last_write_checksum: sha1:79dc1550d921fefec69f8632ed3b24dad41ca2f6
+examples:
+  searchCompanies:
+    speakeasy-default-search-companies:
+      requestBody:
+        application/json: {"query": "B2B SaaS companies in Austin hiring engineers", "limit": 25, "includeSignals": false}
+      responses:
+        "202":
+          application/json: {"id": "<id>", "operationId": "<id>", "status": "queued", "pollUrl": "https://golden-begonia.info/"}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  searchPeople:
+    speakeasy-default-search-people:
+      requestBody:
+        application/json: {"query": "VP Engineering at hiring B2B SaaS companies in SF", "limit": 25, "includeSignals": false, "includeContacts": false}
+      responses:
+        "202":
+          application/json: {"id": "<id>", "operationId": "<id>", "status": "queued", "pollUrl": "https://profitable-brochure.biz", "meta": {}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  startDeepResearch:
+    speakeasy-default-start-deep-research:
+      requestBody:
+        application/json: {"prompt": "Research AI CRM competitors", "schema": {"type": "object", "properties": {"competitors": {"type": "array"}}}, "inputAnchors": [{"input_anchor": {"candidate_index": 1}}]}
+      responses:
+        "202":
+          application/json: {"id": "<id>", "operationId": "<id>", "status": "queued", "pollUrl": "https://slimy-reasoning.biz/"}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  submitEnrichment:
+    speakeasy-default-submit-enrichment:
+      requestBody:
+        application/json: {"fields": ["contact.email", "signals"]}
+      responses:
+        "200":
+          application/json: {"data": {}, "meta": {"requestId": "<id>"}}
+        "202":
+          application/json: {"id": "<id>", "operationId": "<id>", "status": "queued", "pollUrl": "https://lighthearted-corral.net", "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getEnrichment:
+    speakeasy-default-get-enrichment:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "status": "failed"}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getOperation:
+    speakeasy-default-get-operation:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "status": "failed"}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  createMonitor:
+    speakeasy-default-create-monitor:
+      requestBody:
+        application/json: {"name": "Competitor mentions", "type": "site_search", "config": {}, "cadence_minutes": 60, "max_results": 10, "force_fresh": false, "cache_ttl_days": 14}
+      responses:
+        "201":
+          application/json: {"id": "<id>", "name": "<value>", "type": "linkedin_profile", "status": "active", "config": {"key": "<value>", "key1": "<value>"}, "cadence_minutes": 1009.12, "last_run_at": "<value>", "next_run_at": null, "consecutive_failures": 3308, "created_at": "1735264223512", "updated_at": "1735659192699"}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listMonitors:
+    speakeasy-default-list-monitors:
+      responses:
+        "200":
+          application/json: {"data": [], "next_cursor": "<value>"}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  updateMonitor:
+    speakeasy-default-update-monitor:
+      parameters:
+        path:
+          id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "name": "<value>", "type": "instagram_post", "status": "disabled", "config": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "cadence_minutes": 8249.26, "last_run_at": "<value>", "next_run_at": "<value>", "consecutive_failures": 9584.78, "created_at": "1730049905572", "updated_at": "1735604013381"}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  deleteMonitor:
+    speakeasy-default-delete-monitor:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getMonitor:
+    speakeasy-default-get-monitor:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "name": "<value>", "type": "instagram_profile", "status": "disabled", "config": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "cadence_minutes": 8674.62, "last_run_at": "<value>", "next_run_at": "<value>", "consecutive_failures": 8851.77, "created_at": "1732967651304", "updated_at": "1735628848125"}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  runMonitorNow:
+    speakeasy-default-run-monitor-now:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "202":
+          application/json: {"id": "<id>", "name": "<value>", "type": "linkedin_company", "status": "active", "config": {}, "cadence_minutes": 1434.17, "last_run_at": "<value>", "next_run_at": "<value>", "consecutive_failures": 9782.06, "created_at": "1732784773331", "updated_at": "1735630403940"}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listMonitorEvents:
+    speakeasy-default-list-monitor-events:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "monitor_id": "<id>", "dedup_key": "<value>", "event_type": "<value>", "event_json": {"key": "<value>", "key1": "<value>", "key2": "<value>"}, "canonical_person_id": "<id>", "canonical_company_id": "<id>", "detected_at": "<value>"}], "next_cursor": null}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  submitSearch:
+    speakeasy-default-submit-search:
+      requestBody:
+        application/json: {"type": "web_search", "query": "AI startup funding 2026", "match_any": ["AI startup", "machine learning funding"], "match_all": ["Series A", "2026"], "exclude": ["crypto", "blockchain"], "max_results": 10, "site": "techcrunch.com", "sort_by": "relevance", "match_mode": "exact", "hashtag": "productanalytics", "subreddit": "startups"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "status": "succeeded", "type": "tiktok_hashtag", "query": "<value>", "created_at": "1723586289558"}
+        "202":
+          application/json: {"id": "<id>", "status": "queued", "poll_url": "https://joyous-petticoat.net/", "meta": {"request_id": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listSearches:
+    speakeasy-default-list-searches:
+      responses:
+        "200":
+          application/json: {"data": []}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getSearchResult:
+    speakeasy-default-get-search-result:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "status": "queued", "type": "site_search", "query": "<value>", "created_at": "1705652088795"}
+        "401":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  findLinkedInCompanies:
+    speakeasy-default-find-linked-in-companies:
+      requestBody:
+        application/json: {"domains": ["https://example.com"]}
+      responses:
+        "200":
+          application/json: {"data": [], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getLinkedInProfile:
+    speakeasy-default-get-linked-in-profile:
+      requestBody:
+        application/json: {"username": "some-public-id"}
+      responses:
+        "200":
+          application/json: {"data": {"username": "Elizabeth.Grady"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getLinkedInCompany:
+    speakeasy-default-get-linked-in-company:
+      requestBody:
+        application/json: {"identifier": "acme-inc"}
+      responses:
+        "200":
+          application/json: {"data": {"identifier": "<value>"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInCompanyPosts:
+    speakeasy-default-list-linked-in-company-posts:
+      requestBody:
+        application/json: {"companySlug": "acme-inc", "limit": 20}
+      responses:
+        "200":
+          application/json: {"data": {"companySlug": "<value>", "posts": []}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInProfilePosts:
+    speakeasy-default-list-linked-in-profile-posts:
+      requestBody:
+        application/json: {"username": "some-public-id", "maxPosts": 20}
+      responses:
+        "200":
+          application/json: {"data": {"username": "Dallin.Rau9", "posts": [{"activityId": "<id>", "text": "<value>"}]}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  searchLinkedInKeywordPosts:
+    speakeasy-default-search-linked-in-keyword-posts:
+      requestBody:
+        application/json: {"keyword": "b2b saas"}
+      responses:
+        "200":
+          application/json: {"data": [{"activityId": "<id>", "text": "<value>"}], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInPostReactions:
+    speakeasy-default-list-linked-in-post-reactions:
+      requestBody:
+        application/json: {"postUrls": ["https://www.linkedin.com/feed/update/urn:li:activity:123"], "maxItems": 10}
+      responses:
+        "200":
+          application/json: {"data": [], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInPostComments:
+    speakeasy-default-list-linked-in-post-comments:
+      requestBody:
+        application/json: {"postUrls": ["https://www.linkedin.com/feed/update/urn:li:activity:123"], "maxItems": 10}
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "commentary": "<value>", "linkedinUrl": "https://lean-draw.biz/", "createdAt": "1715593407766", "createdAtTimestamp": 8874.87, "engagement": {"likes": 2826.68, "comments": 2755.52, "shares": 7564.82}, "postId": "<id>", "pinned": true, "edited": false, "actor": {"id": "<id>", "type": "company", "name": "<value>", "linkedinUrl": "https://infatuated-beret.biz", "position": "<value>"}}], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInProfileReactions:
+    speakeasy-default-list-linked-in-profile-reactions:
+      requestBody:
+        application/json: {"profiles": ["https://www.linkedin.com/in/satyanadella", "some-public-id"], "maxItems": 10, "postedLimit": "any"}
+      responses:
+        "200":
+          application/json: {"data": [{"profileUrl": "https://blushing-transparency.net", "profileUsername": "<value>", "reactionType": "<value>", "post": {}}], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listLinkedInProfileComments:
+    speakeasy-default-list-linked-in-profile-comments:
+      requestBody:
+        application/json: {"profiles": ["https://www.linkedin.com/in/satyanadella", "some-public-id"], "maxItems": 10, "postedLimit": "any"}
+      responses:
+        "200":
+          application/json: {"data": [{"profileUrl": "https://tender-cassava.net", "profileUsername": "<value>", "commentText": "<value>", "post": {}}], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getInstagramProfile:
+    speakeasy-default-get-instagram-profile:
+      requestBody:
+        application/json: {"username": "instagram"}
+      responses:
+        "200":
+          application/json: {"data": {"username": "Grant_Graham43"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listInstagramPosts:
+    speakeasy-default-list-instagram-posts:
+      requestBody:
+        application/json: {"username": "instagram"}
+      responses:
+        "200":
+          application/json: {"data": [], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getInstagramPost:
+    speakeasy-default-get-instagram-post:
+      requestBody:
+        application/json: {"postUrl": "https://www.instagram.com/p/ABC123/"}
+      responses:
+        "200":
+          application/json: {"data": {"shortcode": "<value>"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listInstagramPostComments:
+    speakeasy-default-list-instagram-post-comments:
+      requestBody:
+        application/json: {"postUrl": "https://www.instagram.com/p/ABC123/"}
+      responses:
+        "200":
+          application/json: {"data": [], "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listInstagramFollowers:
+    speakeasy-default-list-instagram-followers:
+      requestBody:
+        application/json: {"username": "instagram"}
+      responses:
+        "200":
+          application/json: {"data": {"username": "Jarvis2", "relation_type": "following", "edges": [], "returned_count": 9493.71}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  listInstagramFollowing:
+    speakeasy-default-list-instagram-following:
+      requestBody:
+        application/json: {"username": "instagram"}
+      responses:
+        "200":
+          application/json: {"data": {"username": "Rachel.Larson59", "relation_type": "following", "edges": [], "returned_count": 522.39}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  getTikTokProfile:
+    speakeasy-default-get-tik-tok-profile:
+      requestBody:
+        application/json: {"username": "tiktok"}
+      responses:
+        "200":
+          application/json: {"data": {"profile": {"username": "Camden.Kohler"}, "videos": []}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  searchWeb:
+    speakeasy-default-search-web:
+      requestBody:
+        application/json: {"query": "best CRM software 2025", "maxResults": 10, "searchDepth": "basic", "topic": "general"}
+      responses:
+        "200":
+          application/json: {"data": {"query": "<value>", "results": [{"url": "https://queasy-pillbox.org", "title": "<value>"}]}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  crawlWebSite:
+    speakeasy-default-crawl-web-site:
+      requestBody:
+        application/json: {"url": "https://example.com", "limit": 5}
+      responses:
+        "200":
+          application/json: {"data": {"domain": "true-soliloquy.com", "pages": [{"url": "https://male-armoire.name/", "content": "<value>"}], "combinedContent": "<value>"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+  scrapeWebPage:
+    speakeasy-default-scrape-web-page:
+      requestBody:
+        application/json: {"url": "https://example.com/page", "renderJs": false, "maxAgeMs": 0, "maxAgeDays": 0}
+      responses:
+        "200":
+          application/json: {"data": {"url": "https://exhausted-cellar.net/", "text": "<value>"}, "meta": {"requestId": "<id>"}}
+        "400":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+        "500":
+          application/json: {"statusCode": 400, "error": "Bad Request", "message": "Validation failed", "path": "/api/v1/search", "requestId": "506af9b3-01a9-43be-9eb4-8458fe3e4f5b", "timestamp": "2026-05-21T09:08:10.000Z", "errors": [{"property": "body.query", "message": "query must be a string", "constraints": {"isString": "query must be a string"}}]}
+examplesVersion: 1.0.2
