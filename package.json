@@ -24,6 +24,8 @@
   "scripts": {
     "lint": "oxlint --max-warnings=0 --deny-warnings src/**/*.ts src/**/*.tsx",
     "build": "tshy",
+    "test": "node --test test/*.test.mjs",
+    "check": "npm run build && npm run lint && npm test",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {},

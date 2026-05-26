@@ -20,6 +20,14 @@ export type SDKOptions = {
    * The security details required to authenticate the SDK
    */
   security?: models.Security | (() => Promise<models.Security>) | undefined;
+  /**
+   * Convenience access key. Equivalent to `security.accessKey`.
+   */
+  accessKey?: string | undefined;
+  /**
+   * Convenience secret key. Equivalent to `security.secretKey`.
+   */
+  secretKey?: string | undefined;
 
   httpClient?: HTTPClient;
   /**

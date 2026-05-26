@@ -85,6 +85,19 @@ export class ClientSDK {
   public readonly _options: SDKOptions & { hooks?: SDKHooks };
 
   constructor(options: SDKOptions = {}) {
+    if (
+      options.security == null &&
+      (options.accessKey != null || options.secretKey != null)
+    ) {
+      options = {
+        ...options,
+        security: {
+          accessKey: options.accessKey,
+          secretKey: options.secretKey,
+        },
+      };
+    }
+
     const opt = options as unknown;
     if (
       typeof opt === "object"
