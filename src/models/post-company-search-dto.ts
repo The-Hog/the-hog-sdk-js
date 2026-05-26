@@ -14,10 +14,6 @@ export type PostCompanySearchDto = {
   limit?: number | undefined;
   includeSignals?: boolean | undefined;
   filters?: EntitySearchFiltersDto | undefined;
-  /**
-   * Project context handle.
-   */
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -26,7 +22,6 @@ export type PostCompanySearchDto$Outbound = {
   limit: number;
   includeSignals: boolean;
   filters?: EntitySearchFiltersDto$Outbound | undefined;
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -38,7 +33,6 @@ export const PostCompanySearchDto$outboundSchema: z.ZodMiniType<
   limit: z._default(z.number(), 25),
   includeSignals: z._default(z.boolean(), false),
   filters: z.optional(EntitySearchFiltersDto$outboundSchema),
-  projectId: z.optional(z.string()),
 });
 
 export function postCompanySearchDtoToJSON(

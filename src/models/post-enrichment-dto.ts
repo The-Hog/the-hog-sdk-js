@@ -26,7 +26,6 @@ export type PostEnrichmentDto = {
   identifiers?: Array<PersonIdentifierRecordDto> | undefined;
   fields: Array<string>;
   signalsConfig?: SignalsConfigDto | undefined;
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -35,7 +34,6 @@ export type PostEnrichmentDto$Outbound = {
   identifiers?: Array<PersonIdentifierRecordDto$Outbound> | undefined;
   fields: Array<string>;
   signals_config?: SignalsConfigDto$Outbound | undefined;
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -48,7 +46,6 @@ export const PostEnrichmentDto$outboundSchema: z.ZodMiniType<
     identifiers: z.optional(z.array(PersonIdentifierRecordDto$outboundSchema)),
     fields: z.array(z.string()),
     signalsConfig: z.optional(SignalsConfigDto$outboundSchema),
-    projectId: z.optional(z.string()),
   }),
   z.transform((v) => {
     return remap$(v, {

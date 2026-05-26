@@ -1,6 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { HTTPClient, TheHog } from "../dist/esm/index.js";
+import {
+  deepResearchRequestDtoToJSON,
+  postCompanySearchDtoToJSON,
+  postEnrichmentDtoToJSON,
+  postPeopleSearchDtoToJSON,
+  postSearchDtoToJSON,
+} from "../dist/esm/models/index.js";
 
 test("supports top-level accessKey and secretKey constructor options", async () => {
   const requests = [];
@@ -82,6 +89,32 @@ test("operations.wait rejects failed operations", async () => {
     () => client.operations.wait("op_failed", { intervalMs: 0 }),
     /Operation op_failed ended with status failed/,
   );
+});
+
+test("request serializers do not emit legacy project body fields", () => {
+  const payloads = [
+    postCompanySearchDtoToJSON({ query: "AI companies", projectId: "proj_1" }),
+    postPeopleSearchDtoToJSON({ query: "VP Engineering", projectId: "proj_1" }),
+    postEnrichmentDtoToJSON({
+      fields: ["contact.email"],
+      projectId: "proj_1",
+    }),
+    deepResearchRequestDtoToJSON({
+      prompt: "Research AI CRM competitors",
+      schema: { type: "object" },
+      projectId: "proj_1",
+    }),
+    postSearchDtoToJSON({
+      type: "web_search",
+      query: "AI startup funding",
+      projectId: "proj_1",
+    }),
+  ];
+
+  for (const payload of payloads) {
+    assert.equal(JSON.parse(payload).projectId, undefined);
+    assert.equal(JSON.parse(payload).project_id, undefined);
+  }
 });
 
 function createMockHttpClient(handler) {

@@ -97,10 +97,6 @@ export type PostSearchDto = {
    */
   dateFilter?: string | undefined;
   /**
-   * Project ID for attribution
-   */
-  projectId?: string | undefined;
-  /**
    * Hashtag to search for (required for tiktok_hashtag type, without # prefix)
    */
   hashtag?: string | undefined;
@@ -139,7 +135,6 @@ export type PostSearchDto$Outbound = {
   sort_by: string;
   match_mode: string;
   date_filter?: string | undefined;
-  project_id?: string | undefined;
   hashtag?: string | undefined;
   subreddit?: string | undefined;
 };
@@ -162,7 +157,6 @@ export const PostSearchDto$outboundSchema: z.ZodMiniType<
     sortBy: z._default(SortBy$outboundSchema, "relevance"),
     matchMode: z._default(MatchMode$outboundSchema, "exact"),
     dateFilter: z.optional(z.string()),
-    projectId: z.optional(z.string()),
     hashtag: z.optional(z.string()),
     subreddit: z.optional(z.string()),
   }),
@@ -176,7 +170,6 @@ export const PostSearchDto$outboundSchema: z.ZodMiniType<
       sortBy: "sort_by",
       matchMode: "match_mode",
       dateFilter: "date_filter",
-      projectId: "project_id",
     });
   }),
 );

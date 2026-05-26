@@ -41,10 +41,6 @@ export type DeepResearchRequestDto = {
    */
   maxCredits?: number | undefined;
   budget?: DeepResearchBudgetRequestDto | undefined;
-  /**
-   * Project context handle.
-   */
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -74,7 +70,6 @@ export type DeepResearchRequestDto$Outbound = {
   inputAnchors?: Array<{ [k: string]: any }> | { [k: string]: any } | undefined;
   maxCredits?: number | undefined;
   budget?: DeepResearchBudgetRequestDto$Outbound | undefined;
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -94,7 +89,6 @@ export const DeepResearchRequestDto$outboundSchema: z.ZodMiniType<
   ),
   maxCredits: z.optional(z.int()),
   budget: z.optional(DeepResearchBudgetRequestDto$outboundSchema),
-  projectId: z.optional(z.string()),
 });
 
 export function deepResearchRequestDtoToJSON(

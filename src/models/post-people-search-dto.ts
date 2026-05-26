@@ -15,10 +15,6 @@ export type PostPeopleSearchDto = {
   includeSignals?: boolean | undefined;
   includeContacts?: boolean | undefined;
   filters?: EntitySearchFiltersDto | undefined;
-  /**
-   * Project context handle.
-   */
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -28,7 +24,6 @@ export type PostPeopleSearchDto$Outbound = {
   includeSignals: boolean;
   includeContacts: boolean;
   filters?: EntitySearchFiltersDto$Outbound | undefined;
-  projectId?: string | undefined;
 };
 
 /** @internal */
@@ -41,7 +36,6 @@ export const PostPeopleSearchDto$outboundSchema: z.ZodMiniType<
   includeSignals: z._default(z.boolean(), false),
   includeContacts: z._default(z.boolean(), false),
   filters: z.optional(EntitySearchFiltersDto$outboundSchema),
-  projectId: z.optional(z.string()),
 });
 
 export function postPeopleSearchDtoToJSON(
