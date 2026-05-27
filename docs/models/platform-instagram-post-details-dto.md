@@ -1,17 +1,7 @@
 # PlatformInstagramPostDetailsDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformInstagramPostDetailsDto } from "@the-hog/sdk/models";
-
-let value: PlatformInstagramPostDetailsDto = {
-  postUrl: "https://www.instagram.com/p/ABC123/",
-};
+```ts
+import type { PlatformInstagramPostDetailsDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                               | Type                                | Required                            | Description                         | Example                             |
-| ----------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- |
-| `postUrl`                           | *string*                            | :heavy_check_mark:                  | N/A                                 | https://www.instagram.com/p/ABC123/ |

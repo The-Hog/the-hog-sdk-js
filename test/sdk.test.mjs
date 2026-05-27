@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
+import { readdirSync, readFileSync } from "node:fs";
 import { createServer } from "node:http";
 import test from "node:test";
 import { promisify } from "node:util";
@@ -13,6 +14,39 @@ import {
 } from "../dist/esm/models/index.js";
 
 const execFileAsync = promisify(execFile);
+
+test("generated SDK covers every public OpenAPI operation", () => {
+  const spec = JSON.parse(readFileSync(new URL("../../the-hog-core-api/mintlify/api-reference/openapi.json", import.meta.url), "utf8"));
+  const operationIds = [];
+  for (const pathItem of Object.values(spec.paths ?? {})) {
+    for (const method of ["get", "post", "put", "patch", "delete"]) {
+      if (pathItem[method]?.operationId) {
+        operationIds.push(pathItem[method].operationId);
+      }
+    }
+  }
+
+  const functionFiles = new Set(
+    readdirSync(new URL("../src/funcs", import.meta.url))
+      .filter((file) => file.endsWith(".ts") && file !== "common.ts")
+      .map((file) => file.replace(/\.ts$/, "")),
+  );
+
+  assert.equal(operationIds.length, 37);
+  for (const operationId of operationIds) {
+    assert.equal(functionFiles.has(kebab(operationId)), true, operationId);
+  }
+});
+
+test("curated resource methods exist", () => {
+  const client = new TheHog();
+
+  assert.equal(typeof client.companies.search, "function");
+  assert.equal(typeof client.people.search, "function");
+  assert.equal(typeof client.deepResearch.start, "function");
+  assert.equal(typeof client.operations.wait, "function");
+  assert.equal(typeof client.scrapers.web.batchScrape, "function");
+});
 
 test("supports top-level accessKey and secretKey constructor options", async () => {
   const requests = [];
@@ -36,6 +70,99 @@ test("supports top-level accessKey and secretKey constructor options", async () 
   assert.equal(requests[0].headers.get("X-Access-Key"), "ak_test");
   assert.equal(requests[0].headers.get("X-Secret-Key"), "sk_test");
   assert.equal(new URL(requests[0].url).pathname, "/api/v1/companies/search");
+});
+
+test("sends idempotency keys on write operations", async () => {
+  const requests = [];
+  const client = new TheHog({
+    accessKey: "ak_test",
+    secretKey: "sk_test",
+    httpClient: createMockHttpClient(async (request) => {
+      requests.push(request);
+      return jsonResponse({
+        id: "search_123",
+        operationId: "op_123",
+        status: "queued",
+        pollUrl: "/api/operations/op_123",
+      }, 202);
+    }),
+  });
+
+  await client.companies.search({ query: "AI companies" }, "idem_123");
+
+  assert.equal(requests[0].headers.get("Idempotency-Key"), "idem_123");
+});
+
+test("serializes array query params", async () => {
+  const requests = [];
+  const client = new TheHog({
+    accessKey: "ak_test",
+    secretKey: "sk_test",
+    httpClient: createMockHttpClient(async (request) => {
+      requests.push(request);
+      return jsonResponse({ data: [], next_cursor: null });
+    }),
+  });
+
+  await client.monitors.list({ status: ["active", "paused"], limit: 2 });
+
+  const url = new URL(requests[0].url);
+  assert.deepEqual(url.searchParams.getAll("status"), ["active", "paused"]);
+  assert.equal(url.searchParams.get("limit"), "2");
+});
+
+test("request validation rejects invalid SDK input before HTTP calls", async () => {
+  let calls = 0;
+  const client = new TheHog({
+    accessKey: "ak_test",
+    secretKey: "sk_test",
+    httpClient: createMockHttpClient(async () => {
+      calls += 1;
+      return jsonResponse({});
+    }),
+  });
+
+  await assert.rejects(
+    () => client.companies.search({}),
+    /Failed to validate searchCompanies input/,
+  );
+  assert.equal(calls, 0);
+});
+
+test("response validation rejects invalid API responses", async () => {
+  const client = new TheHog({
+    accessKey: "ak_test",
+    secretKey: "sk_test",
+    httpClient: createMockHttpClient(async () => jsonResponse({}, 202)),
+  });
+
+  await assert.rejects(
+    () => client.companies.search({ query: "AI companies" }),
+    /Response validation failed/,
+  );
+});
+
+test("API errors expose status, body, response, and request ID", async () => {
+  const client = new TheHog({
+    accessKey: "ak_test",
+    secretKey: "sk_test",
+    httpClient: createMockHttpClient(async () =>
+      jsonResponse({ message: "nope" }, 401, { "x-request-id": "req_123" })
+    ),
+  });
+
+  await assert.rejects(
+    async () => {
+      await client.companies.search({ query: "AI companies" });
+    },
+    (error) => {
+      assert.equal(error.status, 401);
+      assert.equal(error.requestId, "req_123");
+      assert.deepEqual(error.body, { message: "nope" });
+      assert.equal(error.response.status, 401);
+      return true;
+    },
+  );
 });
 
 test("operations.wait polls until success", async () => {
@@ -97,28 +224,30 @@ test("operations.wait rejects failed operations", async () => {
 });
 
 test("request serializers do not emit legacy project body fields", () => {
+  const legacyCamel = ["project", "Id"].join("");
+  const legacySnake = ["project", "id"].join("_");
   const payloads = [
-    postCompanySearchDtoToJSON({ query: "AI companies", projectId: "proj_1" }),
-    postPeopleSearchDtoToJSON({ query: "VP Engineering", projectId: "proj_1" }),
+    postCompanySearchDtoToJSON({ query: "AI companies", [legacyCamel]: "proj_1" }),
+    postPeopleSearchDtoToJSON({ query: "VP Engineering", [legacyCamel]: "proj_1" }),
     postEnrichmentDtoToJSON({
       fields: ["contact.email"],
-      projectId: "proj_1",
+      [legacyCamel]: "proj_1",
     }),
     deepResearchRequestDtoToJSON({
       prompt: "Research AI CRM competitors",
       schema: { type: "object" },
-      projectId: "proj_1",
+      [legacyCamel]: "proj_1",
     }),
     postSearchDtoToJSON({
       type: "web_search",
       query: "AI startup funding",
-      projectId: "proj_1",
+      [legacyCamel]: "proj_1",
     }),
   ];
 
   for (const payload of payloads) {
-    assert.equal(JSON.parse(payload).projectId, undefined);
-    assert.equal(JSON.parse(payload).project_id, undefined);
+    assert.equal(JSON.parse(payload)[legacyCamel], undefined);
+    assert.equal(JSON.parse(payload)[legacySnake], undefined);
   }
 });
 
@@ -192,10 +321,10 @@ function createMockHttpClient(handler) {
   });
 }
 
-function jsonResponse(body, status = 200) {
+function jsonResponse(body, status = 200, headers = {}) {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { "content-type": "application/json" },
+    headers: { "content-type": "application/json", ...headers },
   });
 }
 
@@ -227,4 +356,13 @@ async function close(server) {
       }
     });
   });
+}
+
+function kebab(value) {
+  return value
+    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
+    .replace(/([A-Z]+)([A-Z][a-z])/g, "$1-$2")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
 }

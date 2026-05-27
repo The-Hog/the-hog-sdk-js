@@ -1,19 +1,7 @@
 # MonitorListResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { MonitorListResponseDto } from "@the-hog/sdk/models";
-
-let value: MonitorListResponseDto = {
-  data: [],
-  nextCursor: "<value>",
-};
+```ts
+import type { MonitorListResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                                            | Type                                                             | Required                                                         | Description                                                      |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `data`                                                           | [models.MonitorResponseDto](../models/monitor-response-dto.md)[] | :heavy_check_mark:                                               | N/A                                                              |
-| `nextCursor`                                                     | *string*                                                         | :heavy_check_mark:                                               | N/A                                                              |

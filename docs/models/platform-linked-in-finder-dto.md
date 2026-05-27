@@ -1,19 +1,7 @@
 # PlatformLinkedInFinderDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformLinkedInFinderDto } from "@the-hog/sdk/models";
-
-let value: PlatformLinkedInFinderDto = {
-  domains: [
-    "https://example.com",
-  ],
-};
+```ts
+import type { PlatformLinkedInFinderDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                               | Type                                | Required                            | Description                         | Example                             |
-| ----------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- |
-| `domains`                           | *string*[]                          | :heavy_check_mark:                  | Website domains or URLs to look up. | [<br/>"https://example.com"<br/>]   |

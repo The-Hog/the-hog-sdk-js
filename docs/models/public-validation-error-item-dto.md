@@ -1,23 +1,7 @@
 # PublicValidationErrorItemDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PublicValidationErrorItemDto } from "@the-hog/sdk/models";
-
-let value: PublicValidationErrorItemDto = {
-  property: "body.query",
-  message: "query must be a string",
-  constraints: {
-    "isString": "query must be a string",
-  },
-};
+```ts
+import type { PublicValidationErrorItemDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                    | Type                                     | Required                                 | Description                              | Example                                  |
-| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| `property`                               | *string*                                 | :heavy_check_mark:                       | N/A                                      | body.query                               |
-| `message`                                | *string*                                 | :heavy_check_mark:                       | N/A                                      | query must be a string                   |
-| `constraints`                            | Record<string, *string*>                 | :heavy_minus_sign:                       | N/A                                      | {<br/>"isString": "query must be a string"<br/>} |

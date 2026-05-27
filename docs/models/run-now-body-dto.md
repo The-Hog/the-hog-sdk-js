@@ -1,15 +1,7 @@
 # RunNowBodyDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { RunNowBodyDto } from "@the-hog/sdk/models";
-
-let value: RunNowBodyDto = {};
+```ts
+import type { RunNowBodyDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                              | Type                                               | Required                                           | Description                                        |
-| -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
-| `forceFresh`                                       | *boolean*                                          | :heavy_minus_sign:                                 | Force a fresh scrape for this run, bypassing cache |

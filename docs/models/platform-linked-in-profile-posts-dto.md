@@ -1,18 +1,7 @@
 # PlatformLinkedInProfilePostsDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformLinkedInProfilePostsDto } from "@the-hog/sdk/models";
-
-let value: PlatformLinkedInProfilePostsDto = {
-  username: "some-public-id",
-};
+```ts
+import type { PlatformLinkedInProfilePostsDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        | Example            |
-| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
-| `username`         | *string*           | :heavy_check_mark: | N/A                | some-public-id     |
-| `maxPosts`         | *number*           | :heavy_minus_sign: | N/A                |                    |

@@ -1,20 +1,7 @@
 # WebScrapeResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { WebScrapeResponseDto } from "@the-hog/sdk/models";
-
-let value: WebScrapeResponseDto = {
-  url: "https://extroverted-permafrost.info",
-  text: "<value>",
-};
+```ts
+import type { WebScrapeResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `url`              | *string*           | :heavy_check_mark: | N/A                |
-| `text`             | *string*           | :heavy_check_mark: | N/A                |
-| `statusCode`       | *number*           | :heavy_minus_sign: | N/A                |

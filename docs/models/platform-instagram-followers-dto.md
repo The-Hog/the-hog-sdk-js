@@ -1,18 +1,7 @@
 # PlatformInstagramFollowersDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformInstagramFollowersDto } from "@the-hog/sdk/models";
-
-let value: PlatformInstagramFollowersDto = {
-  username: "instagram",
-};
+```ts
+import type { PlatformInstagramFollowersDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                                         | Type                                                          | Required                                                      | Description                                                   | Example                                                       |
-| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
-| `username`                                                    | *string*                                                      | :heavy_check_mark:                                            | N/A                                                           | instagram                                                     |
-| `maxFollowers`                                                | *number*                                                      | :heavy_minus_sign:                                            | Maximum followers to request. Unlimited is not exposed on v1. |                                                               |

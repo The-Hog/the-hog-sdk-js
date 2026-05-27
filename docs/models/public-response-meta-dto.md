@@ -1,17 +1,7 @@
 # PublicResponseMetaDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PublicResponseMetaDto } from "@the-hog/sdk/models";
-
-let value: PublicResponseMetaDto = {
-  requestId: "<id>",
-};
+```ts
+import type { PublicResponseMetaDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `requestId`        | *string*           | :heavy_check_mark: | N/A                |

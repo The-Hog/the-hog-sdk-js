@@ -1,18 +1,7 @@
 # PlatformLinkedInKeywordPostsDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformLinkedInKeywordPostsDto } from "@the-hog/sdk/models";
-
-let value: PlatformLinkedInKeywordPostsDto = {
-  keyword: "b2b saas",
-};
+```ts
+import type { PlatformLinkedInKeywordPostsDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      | Example                                                                                          |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `keyword`                                                                                        | *string*                                                                                         | :heavy_check_mark:                                                                               | N/A                                                                                              | b2b saas                                                                                         |
-| `config`                                                                                         | [models.LinkedInKeywordPostsConfigBodyDto](../models/linked-in-keyword-posts-config-body-dto.md) | :heavy_minus_sign:                                                                               | N/A                                                                                              |                                                                                                  |

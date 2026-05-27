@@ -136,7 +136,7 @@ See [SDK and CLI Publishing](docs/publishing.md) for the release flow across Typ
 
 - [Companies](docs/sdks/companies/README.md)
 - [People](docs/sdks/people/README.md)
-- [Deep Research](docs/sdks/deepresearch/README.md)
+- [Deep Research](docs/sdks/deep-research/README.md)
 - [Operations](docs/sdks/operations/README.md)
 - [Enrichments](docs/sdks/enrichments/README.md)
 - [Search](docs/sdks/search/README.md)

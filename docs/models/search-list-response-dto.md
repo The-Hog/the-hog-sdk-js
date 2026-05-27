@@ -1,18 +1,7 @@
 # SearchListResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { SearchListResponseDto } from "@the-hog/sdk/models";
-
-let value: SearchListResponseDto = {
-  data: [],
-};
+```ts
+import type { SearchListResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                                      | Type                                                       | Required                                                   | Description                                                |
-| ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| `data`                                                     | [models.SearchResultDto](../models/search-result-dto.md)[] | :heavy_check_mark:                                         | N/A                                                        |
-| `nextCursor`                                               | *string*                                                   | :heavy_minus_sign:                                         | N/A                                                        |

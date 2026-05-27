@@ -1,15 +1,7 @@
 # DeepResearchBudgetRequestDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { DeepResearchBudgetRequestDto } from "@the-hog/sdk/models";
-
-let value: DeepResearchBudgetRequestDto = {};
+```ts
+import type { DeepResearchBudgetRequestDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                          | Type                                           | Required                                       | Description                                    |
-| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
-| `maxCredits`                                   | *number*                                       | :heavy_minus_sign:                             | Maximum credits to spend on this research run. |

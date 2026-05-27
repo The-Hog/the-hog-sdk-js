@@ -1,17 +1,7 @@
 # LinkedInFinderResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { LinkedInFinderResponseDto } from "@the-hog/sdk/models";
-
-let value: LinkedInFinderResponseDto = {};
+```ts
+import type { LinkedInFinderResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `linkedinUrl`      | *string*           | :heavy_minus_sign: | N/A                |
-| `domain`           | *string*           | :heavy_minus_sign: | N/A                |
-| `companyName`      | *string*           | :heavy_minus_sign: | N/A                |

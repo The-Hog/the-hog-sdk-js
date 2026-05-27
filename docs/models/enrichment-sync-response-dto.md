@@ -1,24 +1,7 @@
 # EnrichmentSyncResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { EnrichmentSyncResponseDto } from "@the-hog/sdk/models";
-
-let value: EnrichmentSyncResponseDto = {
-  data: {
-    "key": "<value>",
-    "key1": "<value>",
-  },
-  meta: {
-    requestId: "<id>",
-  },
-};
+```ts
+import type { EnrichmentSyncResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `data`                                                                | Record<string, *any*>                                                 | :heavy_check_mark:                                                    | N/A                                                                   |
-| `meta`                                                                | [models.PublicResponseMetaDto](../models/public-response-meta-dto.md) | :heavy_check_mark:                                                    | N/A                                                                   |

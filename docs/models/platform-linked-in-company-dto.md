@@ -1,17 +1,7 @@
 # PlatformLinkedInCompanyDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformLinkedInCompanyDto } from "@the-hog/sdk/models";
-
-let value: PlatformLinkedInCompanyDto = {
-  identifier: "acme-inc",
-};
+```ts
+import type { PlatformLinkedInCompanyDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        | Example            |
-| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
-| `identifier`       | *string*           | :heavy_check_mark: | N/A                | acme-inc           |

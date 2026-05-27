@@ -1,18 +1,7 @@
 # PlatformTikTokUsernameDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { PlatformTikTokUsernameDto } from "@the-hog/sdk/models";
-
-let value: PlatformTikTokUsernameDto = {
-  username: "tiktok",
-};
+```ts
+import type { PlatformTikTokUsernameDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        | Example            |
-| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
-| `username`         | *string*           | :heavy_check_mark: | N/A                | tiktok             |
-| `maxVideos`        | *number*           | :heavy_minus_sign: | N/A                |                    |

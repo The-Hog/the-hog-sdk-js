@@ -1,21 +1,7 @@
 # LinkedInCommentEngagementResponseDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { LinkedInCommentEngagementResponseDto } from "@the-hog/sdk/models";
-
-let value: LinkedInCommentEngagementResponseDto = {
-  likes: 8879.27,
-  comments: 8581.19,
-  shares: 8540.85,
-};
+```ts
+import type { LinkedInCommentEngagementResponseDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `likes`            | *number*           | :heavy_check_mark: | N/A                |
-| `comments`         | *number*           | :heavy_check_mark: | N/A                |
-| `shares`           | *number*           | :heavy_check_mark: | N/A                |

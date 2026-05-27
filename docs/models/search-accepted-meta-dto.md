@@ -1,17 +1,7 @@
 # SearchAcceptedMetaDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { SearchAcceptedMetaDto } from "@the-hog/sdk/models";
-
-let value: SearchAcceptedMetaDto = {
-  requestId: "<id>",
-};
+```ts
+import type { SearchAcceptedMetaDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                              | Type                               | Required                           | Description                        |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| `requestId`                        | *string*                           | :heavy_check_mark:                 | Request ID for support and tracing |

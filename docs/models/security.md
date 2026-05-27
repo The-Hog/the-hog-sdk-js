@@ -1,16 +1,7 @@
 # Security
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { Security } from "@the-hog/sdk/models";
-
-let value: Security = {};
+```ts
+import type { Security } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `accessKey`        | *string*           | :heavy_minus_sign: | N/A                |
-| `secretKey`        | *string*           | :heavy_minus_sign: | N/A                |

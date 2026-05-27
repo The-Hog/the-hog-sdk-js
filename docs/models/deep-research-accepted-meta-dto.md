@@ -1,15 +1,7 @@
 # DeepResearchAcceptedMetaDto
 
-## Example Usage
+Generated from the public OpenAPI contract.
 
-```typescript
-import { DeepResearchAcceptedMetaDto } from "@the-hog/sdk/models";
-
-let value: DeepResearchAcceptedMetaDto = {};
+```ts
+import type { DeepResearchAcceptedMetaDto } from "@the-hog/sdk/models";
 ```
-
-## Fields
-
-| Field                 | Type                  | Required              | Description           |
-| --------------------- | --------------------- | --------------------- | --------------------- |
-| `schemaContract`      | Record<string, *any*> | :heavy_minus_sign:    | N/A                   |
