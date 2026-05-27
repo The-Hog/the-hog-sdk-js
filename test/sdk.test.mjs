@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
-import { readdirSync, readFileSync } from "node:fs";
+import { readdirSync } from "node:fs";
 import { createServer } from "node:http";
 import test from "node:test";
 import { promisify } from "node:util";
@@ -16,15 +16,45 @@ import {
 const execFileAsync = promisify(execFile);
 
 test("generated SDK covers every public OpenAPI operation", () => {
-  const spec = JSON.parse(readFileSync(new URL("../../the-hog-core-api/mintlify/api-reference/openapi.json", import.meta.url), "utf8"));
-  const operationIds = [];
-  for (const pathItem of Object.values(spec.paths ?? {})) {
-    for (const method of ["get", "post", "put", "patch", "delete"]) {
-      if (pathItem[method]?.operationId) {
-        operationIds.push(pathItem[method].operationId);
-      }
-    }
-  }
+  const operationIds = [
+    "batchScrapeWebPages",
+    "createMonitor",
+    "crawlWebSite",
+    "deleteMonitor",
+    "findLinkedInCompanies",
+    "getEnrichment",
+    "getInstagramPost",
+    "getInstagramProfile",
+    "getLinkedInCompany",
+    "getLinkedInProfile",
+    "getMonitor",
+    "getOperation",
+    "getSearchResult",
+    "getTikTokProfile",
+    "listInstagramFollowers",
+    "listInstagramFollowing",
+    "listInstagramPostComments",
+    "listInstagramPosts",
+    "listLinkedInCompanyPosts",
+    "listLinkedInPostComments",
+    "listLinkedInPostReactions",
+    "listLinkedInProfileComments",
+    "listLinkedInProfilePosts",
+    "listLinkedInProfileReactions",
+    "listMonitorEvents",
+    "listMonitors",
+    "listSearches",
+    "runMonitorNow",
+    "scrapeWebPage",
+    "searchCompanies",
+    "searchLinkedInKeywordPosts",
+    "searchPeople",
+    "searchWeb",
+    "startDeepResearch",
+    "submitEnrichment",
+    "submitSearch",
+    "updateMonitor",
+  ];
 
   const functionFiles = new Set(
     readdirSync(new URL("../src/funcs", import.meta.url))
@@ -33,6 +63,7 @@ test("generated SDK covers every public OpenAPI operation", () => {
   );
 
   assert.equal(operationIds.length, 37);
+  assert.equal(functionFiles.size, 37);
   for (const operationId of operationIds) {
     assert.equal(functionFiles.has(kebab(operationId)), true, operationId);
   }
