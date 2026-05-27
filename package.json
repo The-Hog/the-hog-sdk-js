@@ -4,6 +4,9 @@
   "author": "The Hog",
   "license": "MIT",
   "type": "module",
+  "bin": {
+    "the-hog": "./dist/esm/cli/index.js"
+  },
   "tshy": {
     "compiler": "tsgo",
     "sourceDialects": [
@@ -24,12 +27,15 @@
   "scripts": {
     "lint": "oxlint --max-warnings=0 --deny-warnings src/**/*.ts src/**/*.tsx",
     "build": "tshy",
+    "generate:sdk": "node scripts/generate-sdk.mjs",
     "test": "node --test test/*.test.mjs",
     "check": "npm run build && npm run lint && npm test",
+    "pack:dry-run": "npm pack --dry-run",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {},
   "devDependencies": {
+    "@types/node": "^22.15.29",
     "@typescript/native-preview": "7.0.0-dev.20260302.1",
     "oxlint": "^1.60.0",
     "tshy": "^3.3.2",

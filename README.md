@@ -8,6 +8,12 @@ Official TypeScript SDK for The Hog API.
 npm install @the-hog/sdk
 ```
 
+The package also includes the v1 CLI:
+
+```bash
+npx @the-hog/sdk --help
+```
+
 ## Quickstart
 
 ```ts
@@ -84,6 +90,47 @@ await hog.companies.search(
   "company-search-2026-05-27",
 );
 ```
+
+## CLI
+
+Set credentials with environment variables:
+
+```bash
+export THE_HOG_ACCESS_KEY=...
+export THE_HOG_SECRET_KEY=...
+```
+
+Run core workflows:
+
+```bash
+the-hog auth status
+the-hog companies search --query "B2B SaaS companies hiring engineers"
+the-hog people search --query "VP Engineering at fintech companies" --include-contacts
+the-hog deep-research start --body '{"prompt":"Find AI voice agent companies","schema":{"type":"object"}}'
+the-hog enrichments submit --body-file enrichment.json
+the-hog operations get op_123
+the-hog operations wait op_123 --interval-ms 2000 --timeout-ms 120000
+```
+
+For local or staging API testing, set `THE_HOG_SERVER_URL` or pass `--server-url`.
+
+## Releases
+
+SDK generation and publishing are separate. OpenAPI changes should open reviewed SDK PRs; publishing only happens from version tags in this repo.
+
+```bash
+npm ci
+npm run check
+npm pack --dry-run
+git tag v0.2.0
+git push origin v0.2.0
+```
+
+Tagged releases publish `@the-hog/sdk` to npm. The CLI is distributed from the same package for v1 through the `the-hog` bin.
+
+Mintlify API docs are published from `the-hog-core-api/mintlify`; this README links to the generated SDK references below.
+
+See [SDK and CLI Publishing](docs/publishing.md) for the release flow across TypeScript, CLI, Python, and Mintlify docs.
 
 ## API Reference
 
