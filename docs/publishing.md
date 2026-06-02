@@ -12,14 +12,15 @@ OpenAPI changes in `the-hog-core-api` should dispatch SDK generation into this r
 - Install: `npm install @the-hog/sdk`
 - CLI use: `npx @the-hog/sdk --help`
 
-Release tags are the publishing trigger:
+Release tags are the publishing trigger. Use normal semver tags for npm
+releases:
 
 ```bash
 npm ci
 npm run check
 npm pack --dry-run
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.1.0
+git push origin v0.1.0
 ```
 
 The GitHub release workflow builds, tests, runs a pack dry-run, verifies `the-hog --help`, and publishes to npm with provenance. Prefer npm Trusted Publishing for the `npm` environment; keep `NPM_TOKEN` only as a fallback.

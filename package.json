@@ -1,11 +1,48 @@
 {
   "name": "@the-hog/sdk",
   "version": "0.1.0",
+  "description": "Official TypeScript SDK and lightweight CLI for The Hog API.",
   "author": "The Hog",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/The-Hog/the-hog-sdk-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Hog/the-hog-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/The-Hog/the-hog-sdk-js/issues"
+  },
+  "keywords": [
+    "thehog",
+    "the-hog",
+    "sales-intelligence",
+    "prospecting",
+    "people-search",
+    "company-search",
+    "deep-research",
+    "typescript-sdk"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "bin": {
     "the-hog": "./dist/esm/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "docs",
+    "README.md",
+    "USAGE.md",
+    "FUNCTIONS.md",
+    "RUNTIMES.md",
+    "LICENSE",
+    "jsr.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "tshy": {
     "compiler": "tsgo",

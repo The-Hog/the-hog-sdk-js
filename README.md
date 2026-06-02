@@ -1,6 +1,11 @@
 # @the-hog/sdk
 
-Official TypeScript SDK for The Hog API.
+Official TypeScript SDK and lightweight CLI for [The Hog](https://thehog.ai).
+
+The Hog API helps you find companies and people, enrich known prospects, run
+structured deep research, search public web/social sources, and monitor topics
+over time. This package is the best fit when you want to call those workflows
+from a Node.js, Bun, Deno, browser, or TypeScript application.
 
 ## Install
 
@@ -8,10 +13,39 @@ Official TypeScript SDK for The Hog API.
 npm install @the-hog/sdk
 ```
 
-The package also includes the v1 CLI:
+Run the packaged CLI without installing it globally:
 
 ```bash
 npx @the-hog/sdk --help
+```
+
+Or install it as a project dependency and run the `the-hog` bin:
+
+```bash
+npm install @the-hog/sdk
+npx the-hog auth status
+```
+
+## Authenticate
+
+Create API credentials in The Hog, then set both environment variables:
+
+```bash
+export THE_HOG_ACCESS_KEY="<access-key>"
+export THE_HOG_SECRET_KEY="<secret-key>"
+```
+
+The default API base URL is `https://developer.thehog.ai`. For staging or local
+development, set:
+
+```bash
+export THE_HOG_SERVER_URL="https://developer.thehog.ai"
+```
+
+Check credentials:
+
+```bash
+npx the-hog auth status
 ```
 
 ## Quickstart
@@ -26,13 +60,17 @@ const hog = new TheHog({
 
 const queued = await hog.companies.search({
   query: "B2B SaaS companies in Austin hiring engineers",
+  limit: 5,
 });
 
-const operation = await hog.operations.wait(queued.operationId);
+const operation = await hog.operations.wait(queued.operationId, {
+  timeoutMs: 120_000,
+});
+
 console.log(operation.result);
 ```
 
-You can also use the generated auth shape directly:
+You can also use the generated `security` shape directly:
 
 ```ts
 const hog = new TheHog({
@@ -51,9 +89,14 @@ const hog = new TheHog({
 const queued = await hog.people.search({
   query: "VP Engineering at fintech companies in New York",
   includeContacts: true,
+  limit: 5,
 });
 
-const operation = await hog.operations.wait(queued.operationId);
+const operation = await hog.operations.wait(queued.operationId, {
+  timeoutMs: 120_000,
+});
+
+console.log(operation.result);
 ```
 
 ### Deep Research
@@ -73,38 +116,54 @@ const queued = await hog.deepResearch.start({
             website: { type: "string" },
             reason: { type: "string" },
           },
+          required: ["name", "reason"],
         },
       },
     },
+    required: ["companies"],
   },
 });
 
-const operation = await hog.operations.wait(queued.operationId);
+const operation = await hog.operations.wait(queued.operationId, {
+  timeoutMs: 180_000,
+});
+
+console.log(operation.result);
 ```
 
-### Idempotent Writes
+### Enrichment
+
+```ts
+const queued = await hog.enrichments.submit({
+  identifier: {
+    linkedin_url: "https://www.linkedin.com/in/example",
+  },
+  fields: ["contact.email", "signals"],
+});
+
+const enrichment = await hog.enrichments.get(queued.id);
+console.log(enrichment);
+```
+
+### Idempotent Requests
+
+For async searches and write-like operations, pass an idempotency key as the
+second argument so retries do not create duplicate work:
 
 ```ts
 await hog.companies.search(
-  { query: "cybersecurity startups in London" },
-  "company-search-2026-05-27",
+  { query: "cybersecurity startups in London", limit: 10 },
+  "company-search-2026-06-02",
 );
 ```
 
 ## CLI
 
-Set credentials with environment variables:
-
-```bash
-export THE_HOG_ACCESS_KEY=...
-export THE_HOG_SECRET_KEY=...
-```
-
-Run core workflows:
+The package includes a small `the-hog` CLI for scripts and quick checks:
 
 ```bash
 the-hog auth status
-the-hog companies search --query "B2B SaaS companies hiring engineers"
+the-hog companies search --query "B2B SaaS companies hiring engineers" --limit 5
 the-hog people search --query "VP Engineering at fintech companies" --include-contacts
 the-hog deep-research start --body '{"prompt":"Find AI voice agent companies","schema":{"type":"object"}}'
 the-hog enrichments submit --body-file enrichment.json
@@ -112,25 +171,34 @@ the-hog operations get op_123
 the-hog operations wait op_123 --interval-ms 2000 --timeout-ms 120000
 ```
 
-For local or staging API testing, set `THE_HOG_SERVER_URL` or pass `--server-url`.
+For a fuller terminal and local-agent experience, use the standalone
+[`thehog` CLI](https://github.com/The-Hog/the-hog-cli). The SDK package CLI is
+intentionally small and focused on common API workflows.
+
+## Runtime Support
+
+- Node.js 18 or newer
+- Bun 1 or newer
+- Deno 1.39 or newer
+- Modern browsers with `fetch`
+
+See [Runtime Support](RUNTIMES.md) for details.
 
 ## Releases
 
-SDK generation and publishing are separate. OpenAPI changes should open reviewed SDK PRs; publishing only happens from version tags in this repo.
+Tagged releases publish `@the-hog/sdk` to npm with provenance.
 
 ```bash
 npm ci
 npm run check
 npm pack --dry-run
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.1.0
+git push origin v0.1.0
 ```
 
-Tagged releases publish `@the-hog/sdk` to npm. The CLI is distributed from the same package for v1 through the `the-hog` bin.
-
-Mintlify API docs are published from `the-hog-core-api/mintlify`; this README links to the generated SDK references below.
-
-See [SDK and CLI Publishing](docs/publishing.md) for the release flow across TypeScript, CLI, Python, and Mintlify docs.
+See [SDK and CLI Publishing](docs/publishing.md) for the maintainer release
+flow. OpenAPI changes should open reviewed SDK generation PRs; publishing only
+happens from version tags in this repo.
 
 ## API Reference
 
@@ -145,5 +213,4 @@ See [SDK and CLI Publishing](docs/publishing.md) for the release flow across Typ
 - [LinkedIn Scrapers](docs/sdks/linkedin/README.md)
 - [TikTok Scrapers](docs/sdks/tiktok/README.md)
 - [Web Scrapers](docs/sdks/web/README.md)
-- [Runtime Support](RUNTIMES.md)
 - [Standalone Functions](FUNCTIONS.md)
