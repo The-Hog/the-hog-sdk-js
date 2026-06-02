@@ -67,6 +67,7 @@
     "test": "node --test test/*.test.mjs",
     "check": "npm run build && npm run lint && npm test",
     "pack:dry-run": "npm pack --dry-run",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {},

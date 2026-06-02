@@ -13,6 +13,13 @@ from a Node.js, Bun, Deno, browser, or TypeScript application.
 npm install @the-hog/sdk
 ```
 
+If npm publication is not available in your environment yet, install directly
+from the public GitHub repository:
+
+```bash
+npm install github:The-Hog/the-hog-sdk-js
+```
+
 Run the packaged CLI without installing it globally:
 
 ```bash
