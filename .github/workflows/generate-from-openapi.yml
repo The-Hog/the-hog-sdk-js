@@ -44,7 +44,10 @@ jobs:
         run: npm ci
 
       - name: Generate SDK
-        run: npm run generate:sdk -- --openapi core-api/mintlify/api-reference/openapi.json
+        run: |
+          node core-api/tools/sdk-generator/generate-typescript-sdk.mjs \
+            --openapi core-api/mintlify/api-reference/openapi.json \
+            --sdk-dir .
 
       - name: Check
         run: npm run check
