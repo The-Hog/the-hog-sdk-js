@@ -9,28 +9,28 @@ from a Node.js, Bun, Deno, browser, or TypeScript application.
 
 ## Install
 
-```bash
-npm install @the-hog/sdk
-```
-
-If npm publication is not available in your environment yet, install directly
-from the public GitHub repository:
+Current public install:
 
 ```bash
 npm install github:The-Hog/the-hog-sdk-js
 ```
 
-Run the packaged CLI without installing it globally:
-
-```bash
-npx @the-hog/sdk --help
-```
-
-Or install it as a project dependency and run the `the-hog` bin:
+After the npm package is published, you can install from the registry instead:
 
 ```bash
 npm install @the-hog/sdk
-npx the-hog auth status
+```
+
+Run the packaged CLI:
+
+```bash
+npx the-hog --help
+```
+
+After npm publication, this also works without a project install:
+
+```bash
+npx @the-hog/sdk --help
 ```
 
 ## Authenticate
