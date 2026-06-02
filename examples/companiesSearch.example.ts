@@ -1,0 +1,27 @@
+import dotenv from "dotenv";
+dotenv.config();
+/**
+ * Example usage of the @the-hog/sdk SDK
+ *
+ * To run this example from the examples directory:
+ * npm run build && npx tsx companiesSearch.example.ts
+ */
+
+import { TheHog } from "@the-hog/sdk";
+
+const theHog = new TheHog({
+  security: {
+    accessKey: process.env["THE_HOG_ACCESS_KEY"] ?? "",
+    secretKey: process.env["THE_HOG_SECRET_KEY"] ?? "",
+  },
+});
+
+async function main() {
+  const result = await theHog.companies.search({
+    query: "B2B SaaS companies in Austin hiring engineers",
+  });
+
+  console.log(result);
+}
+
+main().catch(console.error);

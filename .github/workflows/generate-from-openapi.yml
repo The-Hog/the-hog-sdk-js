@@ -1,0 +1,63 @@
+name: Generate from OpenAPI
+
+on:
+  repository_dispatch:
+    types:
+      - core-api-openapi-changed
+  workflow_dispatch:
+    inputs:
+      core_api_repo:
+        description: Core API repository
+        required: true
+        default: The-Hog/the-hog-core-api
+      core_api_ref:
+        description: Core API ref or SHA
+        required: true
+        default: dev
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SDK
+        uses: actions/checkout@v4
+
+      - name: Checkout OpenAPI source
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.client_payload.core_api_repo || github.event.inputs.core_api_repo }}
+          ref: ${{ github.event.client_payload.core_api_sha || github.event.inputs.core_api_ref }}
+          path: core-api
+          token: ${{ secrets.CORE_API_READ_TOKEN || github.token }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Generate SDK
+        run: npm run generate:sdk -- --openapi core-api/mintlify/api-reference/openapi.json
+
+      - name: Check
+        run: npm run check
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: generated/openapi-${{ github.event.client_payload.core_api_sha || github.event.inputs.core_api_ref }}
+          commit-message: Regenerate SDK from OpenAPI
+          title: Regenerate SDK from OpenAPI
+          body: |
+            Regenerates the SDK from the core-api OpenAPI contract.
+
+            Source repo: `${{ github.event.client_payload.core_api_repo || github.event.inputs.core_api_repo }}`
+            Source ref: `${{ github.event.client_payload.core_api_sha || github.event.inputs.core_api_ref }}`
+            OpenAPI path: `mintlify/api-reference/openapi.json`
